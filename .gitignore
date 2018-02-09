@@ -1,0 +1,8 @@
+*.a
+*.o
+*.pyc
+*.DS_Store
+*.bak
+*.out
+build/*
+CMakeFiles/*
