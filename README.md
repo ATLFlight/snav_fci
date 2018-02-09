@@ -22,7 +22,7 @@ is an example of an abstraction layer between the Snapdragon Navigator API and h
 programs. It is intended to isolate application developers from certain
 low-level details of the Snapdragon Navigator API.
 
-To get started with the documentation, see [snav_fci::FlightControlInterface](https://github.com/pages/ATLFlight/snav_fci/classsnav__fci_1_1_flight_control_interface.html).
+To get started with the documentation, see [snav_fci::FlightControlInterface](https://atlflight.github.io/snav_fci/classsnav__fci_1_1_flight_control_interface.html).
 
 Several examples are provided to demonstrate how to use FlightControlInterface:
   - [hello_snav.cpp](https://github.com/ATLFlight/snav_fci/blob/master/examples/hello_snav.cpp)
