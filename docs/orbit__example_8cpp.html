@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Snapdragon Navigator Flight Control Interface: examples/orbit_example.cpp File Reference</title>
+<title>Qualcomm Navigator Flight Control Interface: examples/orbit_example.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Snapdragon Navigator Flight Control Interface
-   &#160;<span id="projectnumber">1.0</span>
+   <div id="projectname">Qualcomm Navigator Flight Control Interface
+   &#160;<span id="projectnumber">2.0</span>
    </div>
   </td>
  </tr>
@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -70,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -137,7 +138,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>gKeepGoing</b> = true
       </table>
 </div><div class="memdoc">
 <p>This is an example of circling a point of interest at a constant radius and speed while yawing toward the center of the circle (always facing the point of interest). In this example, the point of interest is the takeoff location.</p>
-<p>This example demonstrates how to use some high-level aspects of <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Snapdragon Navigator Flight Controller. ">snav_fci::FlightControlInterface</a> together with some lower-level functionality (computing rate commands). </p>
+<p>This example demonstrates how to use some high-level aspects of <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Qualcomm Navigator Flight Controller. ">snav_fci::FlightControlInterface</a> together with some lower-level functionality (computing rate commands). </p>
 <p>Parameters used to define the orbit maneuver:</p>
 <ul>
 <li>kOrbitRadius: distance in XY plane from the point of interest to maintain</li>
@@ -153,14 +154,14 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>gKeepGoing</b> = true
 <li>Upon receiving SIGINT, translate in XY plane to the takeoff location (0, 0, kOrbitHeight)</li>
 <li>Land</li>
 </ol>
-<p>Phases 1, 2, 4, and 5 use high-level functions of FlightControlInterface. Phase 3 directly computes velocity and yaw rate commands and sends the result to FlightControlInterface to be sent to Snapdragon Navigator.</p>
+<p>Phases 1, 2, 4, and 5 use high-level functions of FlightControlInterface. Phase 3 directly computes velocity and yaw rate commands and sends the result to FlightControlInterface to be sent to Qualcomm Navigator.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 17 2018 14:45:16 for Snapdragon Navigator Flight Control Interface by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 17 2018 13:20:04 for Qualcomm Navigator Flight Control Interface by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

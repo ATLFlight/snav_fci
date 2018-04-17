@@ -62,7 +62,7 @@ public:
   }
 
   int tx_rate; /**< Loop rate of tx thread in Hz **/
-  SnMode desired_mode; /**< Desired mode of Snapdragon Navigator **/
+  SnMode desired_mode; /**< Desired mode of Qualcomm Navigator **/
   SnPosEstType desired_pos_est_type; /**< Desired type of position estimate,
                                           e.g. VIO, GPS, DFT **/
   bool strict_pos_est_type_checking; /**< Whether or not the desired position

@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['takeoff',['takeoff',['../classsnav__fci_1_1_flight_control_interface.html#a3bcf6f92246f065b520a50813defb7d6',1,'snav_fci::FlightControlInterface::takeoff(const TakeoffConfig &amp;takeoff_config)'],['../classsnav__fci_1_1_flight_control_interface.html#ad5b48a5288b154ec634a4720701fc4b1',1,'snav_fci::FlightControlInterface::takeoff()']]],
-  ['takeoffconfig',['TakeoffConfig',['../structsnav__fci_1_1_takeoff_config.html#ace77c76fc389e51507664a6cedbff5d5',1,'snav_fci::TakeoffConfig::TakeoffConfig()'],['../structsnav__fci_1_1_takeoff_config.html#ab9ef1e0835aa109ffc5c4b0798a66251',1,'snav_fci::TakeoffConfig::TakeoffConfig(float height)'],['../structsnav__fci_1_1_takeoff_config.html#aaa388c1e8b808c1463287558cc3b429c',1,'snav_fci::TakeoffConfig::TakeoffConfig(float height, float min_takeoff_speed, float max_takeoff_speed, float max_linear_acceleration_norm)']]],
-  ['telemetry_5ftask',['telemetry_task',['../multithreaded__waypoint__example_8cpp.html#a378680061401dbd20f7198cf16ed0eca',1,'multithreaded_waypoint_example.cpp']]],
-  ['thrustattangvelcommand',['ThrustAttAngVelCommand',['../classsnav__fci_1_1_thrust_att_ang_vel_command.html#a1b7c7b0c11bf625491723eb5daabf2ff',1,'snav_fci::ThrustAttAngVelCommand']]],
-  ['trajectorycommand',['TrajectoryCommand',['../classsnav__fci_1_1_trajectory_command.html#ae18e9b08b92e42336757d58668bb5d1d',1,'snav_fci::TrajectoryCommand']]],
-  ['tx_5fok',['tx_ok',['../classsnav__fci_1_1_flight_control_interface.html#a520011327f1a2301fa9f48f4ffa43489',1,'snav_fci::FlightControlInterface']]],
-  ['txconfig',['TxConfig',['../classsnav__fci_1_1_tx_config.html#aa096d9482b5f2c82bf3cc32023d15dcd',1,'snav_fci::TxConfig']]]
+  ['set_5fconfig',['set_config',['../classsnav__fci_1_1_waypoint.html#a893bff9e50719705925b5391de903cf3',1,'snav_fci::Waypoint']]],
+  ['set_5ftx_5fcommand',['set_tx_command',['../classsnav__fci_1_1_flight_control_interface.html#a1e8f038a2b6dd6c803b4aa89f1c801d4',1,'snav_fci::FlightControlInterface']]],
+  ['set_5fverbosity',['set_verbosity',['../classsnav__fci_1_1_flight_control_interface.html#aba2fbe4a399a0f1f2ce263df533d3144',1,'snav_fci::FlightControlInterface']]],
+  ['set_5fwaypoint_5fframe_5ftf',['set_waypoint_frame_tf',['../classsnav__fci_1_1_flight_control_interface.html#aa0e08acadc567958e104fd30875ba76e',1,'snav_fci::FlightControlInterface']]],
+  ['start_5fprops',['start_props',['../classsnav__fci_1_1_flight_control_interface.html#a0f5377339ca3af395c97d0af431d06b7',1,'snav_fci::FlightControlInterface']]],
+  ['statevector',['StateVector',['../classsnav__fci_1_1_state_vector.html#a836dba765690ccb89bc1ad111975d733',1,'snav_fci::StateVector']]],
+  ['stop_5fprops',['stop_props',['../classsnav__fci_1_1_flight_control_interface.html#a6ffa0351aaf623667689d1d80b88f94b',1,'snav_fci::FlightControlInterface']]]
 ];

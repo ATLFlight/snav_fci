@@ -46,7 +46,7 @@ namespace snav_fci
 
 /**
  * @brief Structure containing the inputs to the sn_send_rc_command()
- * Snapdragon Navigator API function
+ * Qualcomm Navigator API function
  */
 class RcCommand : public TxCommand
 {
@@ -66,7 +66,7 @@ public:
   }
 
   static const size_t kNumRcCommands = 4; /**< Number of RC commands is 4 as
-                                            defined by the Snapdragon Navigator
+                                            defined by the Qualcomm Navigator
                                             API */
   SnRcCommandType type; /**< Specifies how the commands should be interpreted. */
   SnRcCommandOptions options; /**< Options for RC commands. */

@@ -54,13 +54,7 @@ void mission_task()
 {
   using FCI = snav_fci::FlightControlInterface;
 
-  FCI fci;
-  if (fci.initialize(FCI::Permissions::READ_WRITE) != FCI::Return::SUCCESS)
-  {
-    std::cout << "Error initializing FlightControlInterface for READ_WRITE" << std::endl;
-    gMissionInProgress = false;
-    return;
-  }
+  FCI fci(FCI::Permissions::READ_WRITE);
 
   /**
    * Configure snav_fci::FlightControlInterface in this thread since this
@@ -72,41 +66,25 @@ void mission_task()
    */
   snav_fci::TxConfig tx_config;
   tx_config.tx_rate = 100; // Hz
-  if (fci.configure_tx(tx_config) != FCI::Return::SUCCESS)
-  {
-    std::cout << "Error configuring tx" << std::endl;
-    gMissionInProgress = false;
-    return;
-  }
+  fci.configure_tx(tx_config);
 
   snav_fci::RxConfig rx_config;
   rx_config.rx_rate = 250; // Hz
-  if (fci.configure_rx(rx_config) != FCI::Return::SUCCESS)
-  {
-    std::cout << "Error configuring rx" << std::endl;
-    return;
-  }
+  fci.configure_rx(rx_config);
 
-  if (fci.connect() != FCI::Return::SUCCESS) return;
+  fci.connect();
 
   /**
    * Take advantage of snav_fci::TakeoffConfig to configure the takeoff.
    * Set take off height to 2 m, min takeoff speed to 0.05 m/s, max takeoff
    * speed to 1 m/s, and max linear acceleration magnitude to 0.25 m/s^2.
    */
-  if (fci.takeoff(snav_fci::TakeoffConfig(2, 0.05, 1, 0.25)) != FCI::Return::SUCCESS)
-  {
-    std::cout << "Error in takeoff!" << std::endl;
-    gMissionInProgress = false;
-    return;
-  }
+  fci.takeoff(snav_fci::TakeoffConfig(2, 0.05, 1, 0.25));
 
   // Configure waypoints
   snav_fci::WaypointConfig wpconf;
   wpconf.max_linear_velocity_norm = 5; // m/s
   wpconf.max_linear_acceleration_norm = 1; // m/s/s
-  wpconf.max_yaw_velocity_norm = M_PI; // rad/s
-  wpconf.max_yaw_acceleration_norm = M_PI/2; // rad/s/s
 
   /**
    * Define the waypoints for this mission, keeping in mind that the vehicle
@@ -133,13 +111,16 @@ void mission_task()
   int wp_cntr = 1;
   for (auto itr = waypoints.begin(); itr != waypoints.end(); ++itr)
   {
-    if (fci.go_to_waypoint(*itr) != FCI::Return::SUCCESS)
+    try
+    {
+      fci.go_to_waypoint(*itr);
+    }
+    catch (...)
     {
       std::cout << "Error encountered during waypoint #" << wp_cntr << std::endl;
-      gMissionInProgress = false;
-      return;
+      throw;
     }
-    else { ++wp_cntr; }
+    ++wp_cntr;
   }
 
   fci.land(snav_fci::LandingConfig(0.3));
@@ -157,31 +138,23 @@ void telemetry_task()
 {
   using FCI = snav_fci::FlightControlInterface;
 
-  FCI fci;
-  if (fci.initialize(FCI::Permissions::READ_ONLY) != FCI::Return::SUCCESS)
-  {
-    std::cout << "Error initializing FlightControlInterface for READ_ONLY" << std::endl;
-    return;
-  }
+  FCI fci(FCI::Permissions::READ_ONLY);
 
   // Wait until FlightControlInterface has been configured before calling
   // connect() to make sure that the correct configuration is used when
   // spawning the rx thread if it hasn't already been spawned
   fci.wait_for_configure();
-  if (fci.connect() != FCI::Return::SUCCESS) return;
+  fci.connect();
 
-  SnavCachedData snav_data;
-  std::memset(&snav_data, 0, sizeof(SnavCachedData));
-  fci.get_snav_cached_data(snav_data);
+  SnavCachedData snav_data = fci.get_snav_cached_data();
   int64_t t0 = snav_data.pos_vel.time;
   while (snav_fci::FlightControlInterface::rx_ok() && gMissionInProgress)
   {
-    if (fci.get_snav_cached_data(snav_data) != FCI::Return::SUCCESS) return;
+    snav_data = fci.get_snav_cached_data();
 
     // Get estimated and desired state w.r.t. ReferenceFrame::WAYPOINT
-    snav_fci::StateVector estimated_state, desired_state;
-    fci.get_estimated_state(snav_data, estimated_state);
-    fci.get_desired_state(snav_data, desired_state);
+    snav_fci::StateVector estimated_state = fci.get_estimated_state(snav_data);
+    snav_fci::StateVector desired_state = fci.get_desired_state(snav_data);
 
     std::cout << std::endl;
     std::cout << std::fixed << std::setprecision(4);
@@ -236,24 +209,17 @@ void frame_update_task()
 {
   using FCI = snav_fci::FlightControlInterface;
 
-  FCI fci;
-  if (fci.initialize(FCI::Permissions::READ_ONLY) != FCI::Return::SUCCESS)
-  {
-    std::cout << "Error initializing FlightControlInterface for READ_ONLY" << std::endl;
-    return;
-  }
+  FCI fci(FCI::Permissions::READ_ONLY);
 
   // Wait until FlightControlInterface has been configured before calling
   // connect() to make sure that the correct configuration is used when
   // spawning the rx thread if it hasn't already been spawned
   fci.wait_for_configure();
-  if (fci.connect() != FCI::Return::SUCCESS) return;
+  fci.connect();
 
-  SnavCachedData snav_data;
-  std::memset(&snav_data, 0, sizeof(SnavCachedData));
   while (snav_fci::FlightControlInterface::rx_ok() && gMissionInProgress)
   {
-    if (fci.get_snav_cached_data(snav_data) != FCI::Return::SUCCESS) return;
+    SnavCachedData snav_data = fci.get_snav_cached_data();
     if (snav_data.pos_vel.launch_tf_is_valid)
     {
       Eigen::Quaternionf q_el(Eigen::AngleAxisf(snav_data.pos_vel.yaw_el,
@@ -282,12 +248,12 @@ void frame_update_task()
  *    snav_fci::FlightControlInterface::set_waypoint_frame_tf() function and
  *    would normally by achieved by simply using
  *    snav_fci::TxConfig::waypoint_frame_parent
- * 3. `telemetry_thread`: retrieves data from Snapdragon Navigator and prints
+ * 3. `telemetry_thread`: retrieves data from Qualcomm Navigator and prints
  *    it to `stdout`
  *
  * A similar multithreaded architecture may be suitable for a host of other use
  * cases and is more easily achieved using snav_fci::FlightControlInterface
- * compared to using the Snapdragon Navigator API directly.
+ * compared to using the Qualcomm Navigator API directly.
  */
 int main(int argc, char* argv[])
 {

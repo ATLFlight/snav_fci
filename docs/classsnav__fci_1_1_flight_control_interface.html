@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Snapdragon Navigator Flight Control Interface: snav_fci::FlightControlInterface Class Reference</title>
+<title>Qualcomm Navigator Flight Control Interface: snav_fci::FlightControlInterface Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Snapdragon Navigator Flight Control Interface
-   &#160;<span id="projectnumber">1.0</span>
+   <div id="projectname">Qualcomm Navigator Flight Control Interface
+   &#160;<span id="projectnumber">2.0</span>
    </div>
   </td>
  </tr>
@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -72,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -97,73 +98,67 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Interface to the Snapdragon Navigator Flight Controller.  
+<p>Interface to the Qualcomm Navigator Flight Controller.  
  <a href="classsnav__fci_1_1_flight_control_interface.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="flight__control__interface_8hpp_source.html">flight_control_interface.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ac00c18e2a3e63bfb759532ab9e17d1a1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac00c18e2a3e63bfb759532ab9e17d1a1">Permissions</a> { <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac00c18e2a3e63bfb759532ab9e17d1a1ab50339a10e1de285ac99d4c3990b8693">Permissions::NONE</a>, 
-<a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac00c18e2a3e63bfb759532ab9e17d1a1aa7b843fb734e3b3fea8e5f902d3f4144">Permissions::READ_WRITE</a>, 
+<tr class="memitem:ac00c18e2a3e63bfb759532ab9e17d1a1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac00c18e2a3e63bfb759532ab9e17d1a1">Permissions</a> { <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac00c18e2a3e63bfb759532ab9e17d1a1aa7b843fb734e3b3fea8e5f902d3f4144">Permissions::READ_WRITE</a>, 
 <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac00c18e2a3e63bfb759532ab9e17d1a1a47c7e7cb36a953a8c47e02000036bb44">Permissions::READ_ONLY</a>
  }</td></tr>
-<tr class="memdesc:ac00c18e2a3e63bfb759532ab9e17d1a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the permissions of an instance of <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Snapdragon Navigator Flight Controller. ">FlightControlInterface</a>.  <a href="classsnav__fci_1_1_flight_control_interface.html#ac00c18e2a3e63bfb759532ab9e17d1a1">More...</a><br/></td></tr>
+<tr class="memdesc:ac00c18e2a3e63bfb759532ab9e17d1a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the permissions of an instance of <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Qualcomm Navigator Flight Controller. ">FlightControlInterface</a>.  <a href="classsnav__fci_1_1_flight_control_interface.html#ac00c18e2a3e63bfb759532ab9e17d1a1">More...</a><br/></td></tr>
 <tr class="separator:ac00c18e2a3e63bfb759532ab9e17d1a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8467d3a4b809d02d353dfa6c458feece"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a> { <br/>
 &#160;&#160;<a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feecead0749aaba8b833466dfcbb0428e4f89c">Return::SUCCESS</a>, 
 <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feecea36fc6065a3e970bc3e6b2e59da52bf2a">Return::FAILURE</a>, 
-<a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feecea02de9649e258d1dd94056e676061e969">Return::NOT_INITIALIZED</a>, 
-<a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feecea1940a630a2a25829533b90f9be04f184">Return::ALREADY_INITIALIZED</a>, 
-<br/>
-&#160;&#160;<a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feecead91be9b5ceb9fe0af02b9b02413eccf8">Return::NOT_CONNECTED</a>, 
+<a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feecead91be9b5ceb9fe0af02b9b02413eccf8">Return::NOT_CONNECTED</a>, 
 <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feecea76a89dd85825b6f0a6c7092a4dddc44b">Return::ALREADY_CONNECTED</a>, 
-<a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feecea22d1c5198ffef78f12181896348d3da3">Return::NO_WRITE_ACCESS</a>, 
-<a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feecea711ccbb90a53f079932b3f0de33bbe24">Return::WRITE_ACCESS_TAKEN</a>, 
 <br/>
-&#160;&#160;<a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feecea2188ade13df339354cd8c383dda3f8bb">Return::INVALID_CONFIG</a>, 
-<a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feecea2515f551f110282e2660e640a286c40c">Return::NOT_IN_FLIGHT</a>, 
-<a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feeceaa21c26369ef33ebb97e407b196675ef4">Return::IN_FLIGHT</a>, 
-<a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feecea6afae85c81e24d106bec978e17b89ce7">Return::CONNECTION_LOST</a>, 
-<br/>
-&#160;&#160;<a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feeceab88cac5c7171e6c45c39bc33f3f20063">Return::SNAV_CACHED_DATA_ERROR</a>, 
-<a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feecea5343bcd21aad65124478a61831f6949e">Return::NOT_SUPPORTED</a>, 
-<a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feeceace46beb3c574170c356db010ee14b7a0">Return::PROP_START_FAILURE</a>, 
-<a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feecea1e160523e5774fb6c4adbf9fe5318f9e">Return::PROP_STOP_FAILURE</a>, 
-<br/>
-&#160;&#160;<a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feecead32675ed38348d504738d247c1dd59e4">Return::IMPROPER_TX_COMMAND_MODE</a>
+&#160;&#160;<a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feecea1d577991d33fbc42229bd9be38f5d651">Return::TRAJ_NOT_OPTIMIZED</a>, 
+<a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feecea210eada6c71cbf875bbd8e77b45aa830">Return::TRAJ_NOT_FEASIBLE</a>, 
+<a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feecea038b98ac9b1665ce7a3113abcdef1c4f">Return::ACTION_PREEMPTED</a>, 
+<a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feecea7f2dceac513a52fcf0e751379e4a66f2">Return::NO_LOCK</a>
 <br/>
  }</td></tr>
-<tr class="memdesc:a8467d3a4b809d02d353dfa6c458feece"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return codes for <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Snapdragon Navigator Flight Controller. ">FlightControlInterface</a>.  <a href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">More...</a><br/></td></tr>
+<tr class="memdesc:a8467d3a4b809d02d353dfa6c458feece"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return codes for <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Qualcomm Navigator Flight Controller. ">FlightControlInterface</a>.  <a href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">More...</a><br/></td></tr>
 <tr class="separator:a8467d3a4b809d02d353dfa6c458feece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac59374dda40d909e1789a970ee032ed1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac59374dda40d909e1789a970ee032ed1">Action</a> { <br/>
+&#160;&#160;<a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac59374dda40d909e1789a970ee032ed1ab50339a10e1de285ac99d4c3990b8693">Action::NONE</a>, 
+<a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac59374dda40d909e1789a970ee032ed1a8fabc74a4ed0781d663336cbf8c9c53d">Action::TAKEOFF</a>, 
+<a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac59374dda40d909e1789a970ee032ed1ae5baefb3771428cb7aa968a580bb6e65">Action::GO_TO_WAYPOINT</a>, 
+<a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac59374dda40d909e1789a970ee032ed1a47de55c1acf1d68fa5f991888b4ac8db">Action::EXECUTE_MISSION</a>, 
+<br/>
+&#160;&#160;<a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac59374dda40d909e1789a970ee032ed1a479a809c0b6eaaefd3b1df16f976df06">Action::LAND</a>
+<br/>
+ }</td></tr>
+<tr class="memdesc:ac59374dda40d909e1789a970ee032ed1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum used for possible actions.  <a href="classsnav__fci_1_1_flight_control_interface.html#ac59374dda40d909e1789a970ee032ed1">More...</a><br/></td></tr>
+<tr class="separator:ac59374dda40d909e1789a970ee032ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6c417a9254c3faa42cbdd6c5d06fa7f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c417a9254c3faa42cbdd6c5d06fa7f1"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a6c417a9254c3faa42cbdd6c5d06fa7f1">FlightControlInterface</a> ()</td></tr>
-<tr class="memdesc:a6c417a9254c3faa42cbdd6c5d06fa7f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an instance of <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Snapdragon Navigator Flight Controller. ">FlightControlInterface</a>. <br/></td></tr>
-<tr class="separator:a6c417a9254c3faa42cbdd6c5d06fa7f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ef5df13e455e75d6c7d5d7872bc39c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a6ef5df13e455e75d6c7d5d7872bc39c0">~FlightControlInterface</a> ()</td></tr>
-<tr class="memdesc:a6ef5df13e455e75d6c7d5d7872bc39c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor of <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Snapdragon Navigator Flight Controller. ">FlightControlInterface</a>.  <a href="#a6ef5df13e455e75d6c7d5d7872bc39c0">More...</a><br/></td></tr>
-<tr class="separator:a6ef5df13e455e75d6c7d5d7872bc39c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0864999c74a160e8181833dc9010c9e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a0864999c74a160e8181833dc9010c9e2">initialize</a> (const <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac00c18e2a3e63bfb759532ab9e17d1a1">Permissions</a> requested_permissions)</td></tr>
-<tr class="memdesc:a0864999c74a160e8181833dc9010c9e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Snapdragon Navigator Flight Controller. ">FlightControlInterface</a> object.  <a href="#a0864999c74a160e8181833dc9010c9e2">More...</a><br/></td></tr>
-<tr class="separator:a0864999c74a160e8181833dc9010c9e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0150043eb43690003666101be9cff599"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a0150043eb43690003666101be9cff599">FlightControlInterface</a> (const <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac00c18e2a3e63bfb759532ab9e17d1a1">Permissions</a> &amp;requested_access)</td></tr>
+<tr class="memdesc:a0150043eb43690003666101be9cff599"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an instance of <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Qualcomm Navigator Flight Controller. ">FlightControlInterface</a>.  <a href="#a0150043eb43690003666101be9cff599">More...</a><br/></td></tr>
+<tr class="separator:a0150043eb43690003666101be9cff599"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53bf6fdb24b9b2303b6b4588c6c05c77"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a53bf6fdb24b9b2303b6b4588c6c05c77">~FlightControlInterface</a> () noexcept</td></tr>
+<tr class="memdesc:a53bf6fdb24b9b2303b6b4588c6c05c77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor of <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Qualcomm Navigator Flight Controller. ">FlightControlInterface</a>.  <a href="#a53bf6fdb24b9b2303b6b4588c6c05c77">More...</a><br/></td></tr>
+<tr class="separator:a53bf6fdb24b9b2303b6b4588c6c05c77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc1fa942c7791a8ff14fa1d48fe35f06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#afc1fa942c7791a8ff14fa1d48fe35f06">configure_tx</a> (const <a class="el" href="classsnav__fci_1_1_tx_config.html">TxConfig</a> &amp;tx_config)</td></tr>
-<tr class="memdesc:afc1fa942c7791a8ff14fa1d48fe35f06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify configuration options for sending commands to Snapdragon Navigator.  <a href="#afc1fa942c7791a8ff14fa1d48fe35f06">More...</a><br/></td></tr>
+<tr class="memdesc:afc1fa942c7791a8ff14fa1d48fe35f06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify configuration options for sending commands to Qualcomm Navigator.  <a href="#afc1fa942c7791a8ff14fa1d48fe35f06">More...</a><br/></td></tr>
 <tr class="separator:afc1fa942c7791a8ff14fa1d48fe35f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a361aaafcd82b9e3087c4c99713cc47ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a361aaafcd82b9e3087c4c99713cc47ed">configure_rx</a> (const <a class="el" href="classsnav__fci_1_1_rx_config.html">RxConfig</a> &amp;rx_config)</td></tr>
-<tr class="memdesc:a361aaafcd82b9e3087c4c99713cc47ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify configuration options for receiving data from Snapdragon Navigator.  <a href="#a361aaafcd82b9e3087c4c99713cc47ed">More...</a><br/></td></tr>
+<tr class="memdesc:a361aaafcd82b9e3087c4c99713cc47ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify configuration options for receiving data from Qualcomm Navigator.  <a href="#a361aaafcd82b9e3087c4c99713cc47ed">More...</a><br/></td></tr>
 <tr class="separator:a361aaafcd82b9e3087c4c99713cc47ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6888c4dbf0aa06dade7b59ff632fa929"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a6888c4dbf0aa06dade7b59ff632fa929">wait_for_configure</a> ()</td></tr>
-<tr class="memdesc:a6888c4dbf0aa06dade7b59ff632fa929"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block until <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Snapdragon Navigator Flight Controller. ">FlightControlInterface</a> has been configured.  <a href="#a6888c4dbf0aa06dade7b59ff632fa929">More...</a><br/></td></tr>
-<tr class="separator:a6888c4dbf0aa06dade7b59ff632fa929"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23e8c02bb45d4f96ed892587dc7a8cbd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a23e8c02bb45d4f96ed892587dc7a8cbd">wait_for_configure</a> () const noexcept</td></tr>
+<tr class="memdesc:a23e8c02bb45d4f96ed892587dc7a8cbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block until <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Qualcomm Navigator Flight Controller. ">FlightControlInterface</a> has been configured.  <a href="#a23e8c02bb45d4f96ed892587dc7a8cbd">More...</a><br/></td></tr>
+<tr class="separator:a23e8c02bb45d4f96ed892587dc7a8cbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2089a5dc2e00d16b84dafb05cb4aee9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a2089a5dc2e00d16b84dafb05cb4aee9e">connect</a> ()</td></tr>
-<tr class="memdesc:a2089a5dc2e00d16b84dafb05cb4aee9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Establish connection to Snapdragon Navigator.  <a href="#a2089a5dc2e00d16b84dafb05cb4aee9e">More...</a><br/></td></tr>
+<tr class="memdesc:a2089a5dc2e00d16b84dafb05cb4aee9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Establish connection to Qualcomm Navigator.  <a href="#a2089a5dc2e00d16b84dafb05cb4aee9e">More...</a><br/></td></tr>
 <tr class="separator:a2089a5dc2e00d16b84dafb05cb4aee9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3df7b504c53e6420c4da6be09f09a603"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a3df7b504c53e6420c4da6be09f09a603">disconnect</a> ()</td></tr>
-<tr class="memdesc:a3df7b504c53e6420c4da6be09f09a603"><td class="mdescLeft">&#160;</td><td class="mdescRight">End connection to Snapdragon Navigator.  <a href="#a3df7b504c53e6420c4da6be09f09a603">More...</a><br/></td></tr>
-<tr class="separator:a3df7b504c53e6420c4da6be09f09a603"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa62fda382f2d6c826c11e516cb3a5cfb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#aa62fda382f2d6c826c11e516cb3a5cfb">disconnect</a> () noexcept</td></tr>
+<tr class="memdesc:aa62fda382f2d6c826c11e516cb3a5cfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">End connection to Qualcomm Navigator.  <a href="#aa62fda382f2d6c826c11e516cb3a5cfb">More...</a><br/></td></tr>
+<tr class="separator:aa62fda382f2d6c826c11e516cb3a5cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f5377339ca3af395c97d0af431d06b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a0f5377339ca3af395c97d0af431d06b7">start_props</a> ()</td></tr>
 <tr class="memdesc:a0f5377339ca3af395c97d0af431d06b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocking call to start the propellers.  <a href="#a0f5377339ca3af395c97d0af431d06b7">More...</a><br/></td></tr>
 <tr class="separator:a0f5377339ca3af395c97d0af431d06b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -175,14 +170,75 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3bcf6f92246f065b520a50813defb7d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5b48a5288b154ec634a4720701fc4b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ad5b48a5288b154ec634a4720701fc4b1">takeoff</a> ()</td></tr>
 <tr class="separator:ad5b48a5288b154ec634a4720701fc4b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa626b54e15e7188e8c80b158d5cd2b34"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#aa626b54e15e7188e8c80b158d5cd2b34">takeoff_nb</a> (const <a class="el" href="structsnav__fci_1_1_takeoff_config.html">TakeoffConfig</a> &amp;takeoff_config)</td></tr>
+<tr class="memdesc:aa626b54e15e7188e8c80b158d5cd2b34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Non-blocking call to takeoff.  <a href="#aa626b54e15e7188e8c80b158d5cd2b34">More...</a><br/></td></tr>
+<tr class="separator:aa626b54e15e7188e8c80b158d5cd2b34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a872b310a1e2ef214f52b00202bd73eb8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a872b310a1e2ef214f52b00202bd73eb8">takeoff_nb</a> ()</td></tr>
+<tr class="separator:a872b310a1e2ef214f52b00202bd73eb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc652d269c61d8351a2722453019c290"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#acc652d269c61d8351a2722453019c290">land</a> (const <a class="el" href="structsnav__fci_1_1_landing_config.html">LandingConfig</a> &amp;landing_config)</td></tr>
 <tr class="memdesc:acc652d269c61d8351a2722453019c290"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocking call to land.  <a href="#acc652d269c61d8351a2722453019c290">More...</a><br/></td></tr>
 <tr class="separator:acc652d269c61d8351a2722453019c290"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e5098c20c65cb1cda1b8df7f14b7d01"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a6e5098c20c65cb1cda1b8df7f14b7d01">land</a> ()</td></tr>
 <tr class="separator:a6e5098c20c65cb1cda1b8df7f14b7d01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac04116339ecd72292a435c495051086"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#aac04116339ecd72292a435c495051086">land_nb</a> (const <a class="el" href="structsnav__fci_1_1_landing_config.html">LandingConfig</a> &amp;landing_config)</td></tr>
+<tr class="memdesc:aac04116339ecd72292a435c495051086"><td class="mdescLeft">&#160;</td><td class="mdescRight">Non-blocking call to land.  <a href="#aac04116339ecd72292a435c495051086">More...</a><br/></td></tr>
+<tr class="separator:aac04116339ecd72292a435c495051086"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaba734fa3ea18d718763298887c1dc4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#aaba734fa3ea18d718763298887c1dc4d">land_nb</a> ()</td></tr>
+<tr class="separator:aaba734fa3ea18d718763298887c1dc4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ed6cccf77eaced99a8704867cdc2321"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a2ed6cccf77eaced99a8704867cdc2321">go_to_waypoint</a> (const <a class="el" href="classsnav__fci_1_1_waypoint.html">Waypoint</a> &amp;waypoint)</td></tr>
 <tr class="memdesc:a2ed6cccf77eaced99a8704867cdc2321"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocking call to go to specified waypoint.  <a href="#a2ed6cccf77eaced99a8704867cdc2321">More...</a><br/></td></tr>
 <tr class="separator:a2ed6cccf77eaced99a8704867cdc2321"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa11437d4bebc1b85a89c73ab50926547"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#aa11437d4bebc1b85a89c73ab50926547">go_to_waypoint_nb</a> (const <a class="el" href="classsnav__fci_1_1_waypoint.html">Waypoint</a> &amp;waypoint)</td></tr>
+<tr class="memdesc:aa11437d4bebc1b85a89c73ab50926547"><td class="mdescLeft">&#160;</td><td class="mdescRight">Non-blocking call to go to specified waypoint.  <a href="#aa11437d4bebc1b85a89c73ab50926547">More...</a><br/></td></tr>
+<tr class="separator:aa11437d4bebc1b85a89c73ab50926547"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedc77400738e4bf79d48a0722f978586"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#aedc77400738e4bf79d48a0722f978586">configure_planner</a> (const <a class="el" href="classsnav__fci_1_1_planner_config.html">PlannerConfig</a> &amp;config)</td></tr>
+<tr class="memdesc:aedc77400738e4bf79d48a0722f978586"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify the configuration options for the planner.  <a href="#aedc77400738e4bf79d48a0722f978586">More...</a><br/></td></tr>
+<tr class="separator:aedc77400738e4bf79d48a0722f978586"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c7f753c190470f8ff783c9a505da730"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a9c7f753c190470f8ff783c9a505da730">preload_waypoints</a> (const std::vector&lt; <a class="el" href="classsnav__fci_1_1_waypoint.html">Waypoint</a> &gt; &amp;waypoints)</td></tr>
+<tr class="memdesc:a9c7f753c190470f8ff783c9a505da730"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a vector of waypoints.  <a href="#a9c7f753c190470f8ff783c9a505da730">More...</a><br/></td></tr>
+<tr class="separator:a9c7f753c190470f8ff783c9a505da730"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add01e61a380cf5fba30bce31c567ef6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#add01e61a380cf5fba30bce31c567ef6d">compute_trajectory</a> (<a class="el" href="classsnav__fci_1_1_state_vector.html">StateVector</a> starting_state)</td></tr>
+<tr class="memdesc:add01e61a380cf5fba30bce31c567ef6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute a trajectory through the given waypoints.  <a href="#add01e61a380cf5fba30bce31c567ef6d">More...</a><br/></td></tr>
+<tr class="separator:add01e61a380cf5fba30bce31c567ef6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b4cade23ff78807c5f68c0eabc09e0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a7b4cade23ff78807c5f68c0eabc09e0d">execute_mission</a> (const double t_start=0)</td></tr>
+<tr class="memdesc:a7b4cade23ff78807c5f68c0eabc09e0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute the trajectory-following mission.  <a href="#a7b4cade23ff78807c5f68c0eabc09e0d">More...</a><br/></td></tr>
+<tr class="separator:a7b4cade23ff78807c5f68c0eabc09e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14b2225c9580c76ad0c0216c1bd6fe33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a14b2225c9580c76ad0c0216c1bd6fe33">execute_mission_nb</a> (const double t_start=0)</td></tr>
+<tr class="memdesc:a14b2225c9580c76ad0c0216c1bd6fe33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Non-blocking call to execute the trajectory-following mission.  <a href="#a14b2225c9580c76ad0c0216c1bd6fe33">More...</a><br/></td></tr>
+<tr class="separator:a14b2225c9580c76ad0c0216c1bd6fe33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c2d0f76fff55a5d1a8f2c85e315b6bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a0c2d0f76fff55a5d1a8f2c85e315b6bd">wait_on_action</a> () const noexcept</td></tr>
+<tr class="memdesc:a0c2d0f76fff55a5d1a8f2c85e315b6bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for the currently-executing action to complete.  <a href="#a0c2d0f76fff55a5d1a8f2c85e315b6bd">More...</a><br/></td></tr>
+<tr class="separator:a0c2d0f76fff55a5d1a8f2c85e315b6bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c8415ddad03dfd7385e2ac73d214bc9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac00c18e2a3e63bfb759532ab9e17d1a1">Permissions</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a4c8415ddad03dfd7385e2ac73d214bc9">get_permissions</a> () const noexcept</td></tr>
+<tr class="memdesc:a4c8415ddad03dfd7385e2ac73d214bc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the permissions of this object.  <a href="#a4c8415ddad03dfd7385e2ac73d214bc9">More...</a><br/></td></tr>
+<tr class="separator:a4c8415ddad03dfd7385e2ac73d214bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4bea64f70862efdb62223e70ac1c441"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ab4bea64f70862efdb62223e70ac1c441">get_last_action_result</a> () const noexcept</td></tr>
+<tr class="memdesc:ab4bea64f70862efdb62223e70ac1c441"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the result of the most recently executed action.  <a href="#ab4bea64f70862efdb62223e70ac1c441">More...</a><br/></td></tr>
+<tr class="separator:ab4bea64f70862efdb62223e70ac1c441"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf857369ab1c12dc4e440fb9ee6a732b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac59374dda40d909e1789a970ee032ed1">Action</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#adf857369ab1c12dc4e440fb9ee6a732b">get_last_action</a> () const noexcept</td></tr>
+<tr class="memdesc:adf857369ab1c12dc4e440fb9ee6a732b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the most recently executed action.  <a href="#adf857369ab1c12dc4e440fb9ee6a732b">More...</a><br/></td></tr>
+<tr class="separator:adf857369ab1c12dc4e440fb9ee6a732b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c11604b2ef1382ecda0026bdd7a45ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac59374dda40d909e1789a970ee032ed1">Action</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a7c11604b2ef1382ecda0026bdd7a45ca">get_current_action</a> () const noexcept</td></tr>
+<tr class="memdesc:a7c11604b2ef1382ecda0026bdd7a45ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the currently-executing action.  <a href="#a7c11604b2ef1382ecda0026bdd7a45ca">More...</a><br/></td></tr>
+<tr class="separator:a7c11604b2ef1382ecda0026bdd7a45ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4183413cb34e42f8f5acdc97ac937b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#af4183413cb34e42f8f5acdc97ac937b1">get_current_trajectory</a> (std::vector&lt; snav_traj_gen::SnavTrajectory &gt; &amp;traj) const </td></tr>
+<tr class="memdesc:af4183413cb34e42f8f5acdc97ac937b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current trajectory.  <a href="#af4183413cb34e42f8f5acdc97ac937b1">More...</a><br/></td></tr>
+<tr class="separator:af4183413cb34e42f8f5acdc97ac937b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adee5c0e2a9598260759fee18378a6bed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#adee5c0e2a9598260759fee18378a6bed">get_last_optimized_trajectory</a> (std::vector&lt; snav_traj_gen::SnavTrajectory &gt; &amp;traj) const </td></tr>
+<tr class="memdesc:adee5c0e2a9598260759fee18378a6bed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the last optimized trajectory.  <a href="#adee5c0e2a9598260759fee18378a6bed">More...</a><br/></td></tr>
+<tr class="separator:adee5c0e2a9598260759fee18378a6bed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f07f36c5a353a139afc46276f95a050"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a0f07f36c5a353a139afc46276f95a050">get_waypoints</a> (std::vector&lt; <a class="el" href="classsnav__fci_1_1_waypoint.html">Waypoint</a> &gt; &amp;waypoints) const </td></tr>
+<tr class="memdesc:a0f07f36c5a353a139afc46276f95a050"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the input waypoints.  <a href="#a0f07f36c5a353a139afc46276f95a050">More...</a><br/></td></tr>
+<tr class="separator:a0f07f36c5a353a139afc46276f95a050"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2df567db7227659f09d5a4f4b5143b4f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a2df567db7227659f09d5a4f4b5143b4f">get_optimized_waypoints</a> (std::vector&lt; <a class="el" href="classsnav__fci_1_1_waypoint.html">Waypoint</a> &gt; &amp;waypoints) const </td></tr>
+<tr class="memdesc:a2df567db7227659f09d5a4f4b5143b4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the optimized waypoints.  <a href="#a2df567db7227659f09d5a4f4b5143b4f">More...</a><br/></td></tr>
+<tr class="separator:a2df567db7227659f09d5a4f4b5143b4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ba6ca9d9af3829a9cf623a418136f13"><td class="memItemLeft" align="right" valign="top">Planner::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a4ba6ca9d9af3829a9cf623a418136f13">get_planner_status</a> () const </td></tr>
+<tr class="memdesc:a4ba6ca9d9af3829a9cf623a418136f13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current status of the Planner.  <a href="#a4ba6ca9d9af3829a9cf623a418136f13">More...</a><br/></td></tr>
+<tr class="separator:a4ba6ca9d9af3829a9cf623a418136f13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55386fd4021611249cf3710dc45f8fee"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a55386fd4021611249cf3710dc45f8fee">get_trajectory_time</a> () const </td></tr>
+<tr class="memdesc:a55386fd4021611249cf3710dc45f8fee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current trajectory time.  <a href="#a55386fd4021611249cf3710dc45f8fee">More...</a><br/></td></tr>
+<tr class="separator:a55386fd4021611249cf3710dc45f8fee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0e08acadc567958e104fd30875ba76e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#aa0e08acadc567958e104fd30875ba76e">set_waypoint_frame_tf</a> (const Eigen::Quaternionf &amp;q_pw, const Eigen::Vector3f &amp;t_pw)</td></tr>
 <tr class="memdesc:aa0e08acadc567958e104fd30875ba76e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the transform between <a class="el" href="namespacesnav__fci.html#a5e47e6340086e7c66f46362d307e7b81a84fb4bfe2188c39fc1714bb1ddff27c9">ReferenceFrame::WAYPOINT</a> and its parent.  <a href="#aa0e08acadc567958e104fd30875ba76e">More...</a><br/></td></tr>
 <tr class="separator:aa0e08acadc567958e104fd30875ba76e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -192,41 +248,87 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1e8f038a2b6dd6c803b4aa89f1c801d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a1e8f038a2b6dd6c803b4aa89f1c801d4">set_tx_command</a> (const <a class="el" href="classsnav__fci_1_1_tx_command.html">TxCommand</a> &amp;command)</td></tr>
 <tr class="memdesc:a1e8f038a2b6dd6c803b4aa89f1c801d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Directly set the command being sent to the flight controller.  <a href="#a1e8f038a2b6dd6c803b4aa89f1c801d4">More...</a><br/></td></tr>
 <tr class="separator:a1e8f038a2b6dd6c803b4aa89f1c801d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05cbddb7220afc64615caf40b7e3d1ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a05cbddb7220afc64615caf40b7e3d1ce">get_snav_cached_data</a> (SnavCachedData &amp;data) const </td></tr>
-<tr class="memdesc:a05cbddb7220afc64615caf40b7e3d1ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a copy of the latest data from the cache.  <a href="#a05cbddb7220afc64615caf40b7e3d1ce">More...</a><br/></td></tr>
-<tr class="separator:a05cbddb7220afc64615caf40b7e3d1ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4697f753d0265b6e487415cf88f86d8c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a4697f753d0265b6e487415cf88f86d8c">get_estimated_state</a> (const SnavCachedData &amp;snav_data, <a class="el" href="classsnav__fci_1_1_state_vector.html">StateVector</a> &amp;state) const </td></tr>
-<tr class="memdesc:a4697f753d0265b6e487415cf88f86d8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the estimated state as a <a class="el" href="classsnav__fci_1_1_state_vector.html" title="Structure containing position and yaw along with their derivatives. ">StateVector</a> with respect to <a class="el" href="namespacesnav__fci.html#a5e47e6340086e7c66f46362d307e7b81a84fb4bfe2188c39fc1714bb1ddff27c9">ReferenceFrame::WAYPOINT</a> from the SnavCachedData structure.  <a href="#a4697f753d0265b6e487415cf88f86d8c">More...</a><br/></td></tr>
-<tr class="separator:a4697f753d0265b6e487415cf88f86d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6be8805e0177ecf41294612d1787e2de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a6be8805e0177ecf41294612d1787e2de">get_desired_state</a> (const SnavCachedData &amp;snav_data, <a class="el" href="classsnav__fci_1_1_state_vector.html">StateVector</a> &amp;state) const </td></tr>
-<tr class="memdesc:a6be8805e0177ecf41294612d1787e2de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the desired state as a <a class="el" href="classsnav__fci_1_1_state_vector.html" title="Structure containing position and yaw along with their derivatives. ">StateVector</a> with respect to <a class="el" href="namespacesnav__fci.html#a5e47e6340086e7c66f46362d307e7b81a84fb4bfe2188c39fc1714bb1ddff27c9">ReferenceFrame::WAYPOINT</a> from the SnavCachedData structure.  <a href="#a6be8805e0177ecf41294612d1787e2de">More...</a><br/></td></tr>
-<tr class="separator:a6be8805e0177ecf41294612d1787e2de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a096e6be8915758d513644f8266c24dd7"><td class="memItemLeft" align="right" valign="top">SnavCachedData&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a096e6be8915758d513644f8266c24dd7">get_snav_cached_data</a> () const </td></tr>
+<tr class="memdesc:a096e6be8915758d513644f8266c24dd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a copy of the latest data from the cache.  <a href="#a096e6be8915758d513644f8266c24dd7">More...</a><br/></td></tr>
+<tr class="separator:a096e6be8915758d513644f8266c24dd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21dabfe7b823c2c73176c65aaaab6df0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsnav__fci_1_1_state_vector.html">StateVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a21dabfe7b823c2c73176c65aaaab6df0">get_estimated_state</a> (const SnavCachedData &amp;snav_data) const </td></tr>
+<tr class="memdesc:a21dabfe7b823c2c73176c65aaaab6df0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the estimated state as a <a class="el" href="classsnav__fci_1_1_state_vector.html" title="Structure containing position and yaw along with their derivatives. ">StateVector</a> with respect to <a class="el" href="namespacesnav__fci.html#a5e47e6340086e7c66f46362d307e7b81a84fb4bfe2188c39fc1714bb1ddff27c9">ReferenceFrame::WAYPOINT</a> from the SnavCachedData structure.  <a href="#a21dabfe7b823c2c73176c65aaaab6df0">More...</a><br/></td></tr>
+<tr class="separator:a21dabfe7b823c2c73176c65aaaab6df0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe6b45eee6f640945edbfa9fdb58cd3f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsnav__fci_1_1_state_vector.html">StateVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#afe6b45eee6f640945edbfa9fdb58cd3f">get_desired_state</a> (const SnavCachedData &amp;snav_data) const </td></tr>
+<tr class="memdesc:afe6b45eee6f640945edbfa9fdb58cd3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the desired state as a <a class="el" href="classsnav__fci_1_1_state_vector.html" title="Structure containing position and yaw along with their derivatives. ">StateVector</a> with respect to <a class="el" href="namespacesnav__fci.html#a5e47e6340086e7c66f46362d307e7b81a84fb4bfe2188c39fc1714bb1ddff27c9">ReferenceFrame::WAYPOINT</a> from the SnavCachedData structure.  <a href="#afe6b45eee6f640945edbfa9fdb58cd3f">More...</a><br/></td></tr>
+<tr class="separator:afe6b45eee6f640945edbfa9fdb58cd3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accbf382d4c5f7cb3c4bdcceb6d9e47f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#accbf382d4c5f7cb3c4bdcceb6d9e47f0">convert_velocity_to_rc_command</a> (const std::array&lt; float, 3 &gt; velocity, const float yaw_rate, <a class="el" href="classsnav__fci_1_1_rc_command.html">RcCommand</a> &amp;rc_command)</td></tr>
+<tr class="memdesc:accbf382d4c5f7cb3c4bdcceb6d9e47f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert metric velocity command into an <a class="el" href="classsnav__fci_1_1_rc_command.html" title="Structure containing the inputs to the sn_send_rc_command() Qualcomm Navigator API function...">RcCommand</a> suitable for sending to the flight controller based on the configured mode.  <a href="#accbf382d4c5f7cb3c4bdcceb6d9e47f0">More...</a><br/></td></tr>
+<tr class="separator:accbf382d4c5f7cb3c4bdcceb6d9e47f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:af631361862122f33e7c385282f7b54b5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af631361862122f33e7c385282f7b54b5"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#af631361862122f33e7c385282f7b54b5">preempt_current_action</a> ()</td></tr>
+<tr class="memdesc:af631361862122f33e7c385282f7b54b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send preempt signal to currently-executing action. <br/></td></tr>
+<tr class="separator:af631361862122f33e7c385282f7b54b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba2fbe4a399a0f1f2ce263df533d3144"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#aba2fbe4a399a0f1f2ce263df533d3144">set_verbosity</a> (bool verbose)</td></tr>
-<tr class="memdesc:aba2fbe4a399a0f1f2ce263df533d3144"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set verbosity of <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Snapdragon Navigator Flight Controller. ">FlightControlInterface</a>.  <a href="#aba2fbe4a399a0f1f2ce263df533d3144">More...</a><br/></td></tr>
+<tr class="memdesc:aba2fbe4a399a0f1f2ce263df533d3144"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set verbosity of <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Qualcomm Navigator Flight Controller. ">FlightControlInterface</a>.  <a href="#aba2fbe4a399a0f1f2ce263df533d3144">More...</a><br/></td></tr>
 <tr class="separator:aba2fbe4a399a0f1f2ce263df533d3144"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a520011327f1a2301fa9f48f4ffa43489"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a520011327f1a2301fa9f48f4ffa43489"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a520011327f1a2301fa9f48f4ffa43489">tx_ok</a> ()</td></tr>
-<tr class="memdesc:a520011327f1a2301fa9f48f4ffa43489"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not write access to Snapdragon Navigator is ok. <br/></td></tr>
+<tr class="memdesc:a520011327f1a2301fa9f48f4ffa43489"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not write access to Qualcomm Navigator is ok. <br/></td></tr>
 <tr class="separator:a520011327f1a2301fa9f48f4ffa43489"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ce8f12d69b977d40783e23171b369a4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ce8f12d69b977d40783e23171b369a4"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a6ce8f12d69b977d40783e23171b369a4">rx_ok</a> ()</td></tr>
-<tr class="memdesc:a6ce8f12d69b977d40783e23171b369a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not read access to Snapdragon Navigator is ok. <br/></td></tr>
+<tr class="memdesc:a6ce8f12d69b977d40783e23171b369a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not read access to Qualcomm Navigator is ok. <br/></td></tr>
 <tr class="separator:a6ce8f12d69b977d40783e23171b369a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9953afe9f4e1a428dd9c848fc762037"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab9953afe9f4e1a428dd9c848fc762037"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ab9953afe9f4e1a428dd9c848fc762037">ok</a> ()</td></tr>
-<tr class="memdesc:ab9953afe9f4e1a428dd9c848fc762037"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not read and write access to Snapdragon Navigator is ok. <br/></td></tr>
+<tr class="memdesc:ab9953afe9f4e1a428dd9c848fc762037"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not read and write access to Qualcomm Navigator is ok. <br/></td></tr>
 <tr class="separator:ab9953afe9f4e1a428dd9c848fc762037"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add2d81e268d2561e0648ef6da3f3f472"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#add2d81e268d2561e0648ef6da3f3f472">convert_velocity_to_rc_command</a> (const std::array&lt; float, 3 &gt; velocity, const float yaw_rate, <a class="el" href="classsnav__fci_1_1_rc_command.html">RcCommand</a> &amp;rc_command)</td></tr>
-<tr class="memdesc:add2d81e268d2561e0648ef6da3f3f472"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert metric velocity command into an <a class="el" href="classsnav__fci_1_1_rc_command.html" title="Structure containing the inputs to the sn_send_rc_command() Snapdragon Navigator API function...">RcCommand</a> suitable for sending to the flight controller.  <a href="#add2d81e268d2561e0648ef6da3f3f472">More...</a><br/></td></tr>
-<tr class="separator:add2d81e268d2561e0648ef6da3f3f472"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a805ae66ee2eca741defa1f933b0e066c"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a805ae66ee2eca741defa1f933b0e066c">get_return_as_string</a> (<a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a> ret_code)</td></tr>
+<tr class="memdesc:a805ae66ee2eca741defa1f933b0e066c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a Return code to a string.  <a href="#a805ae66ee2eca741defa1f933b0e066c">More...</a><br/></td></tr>
+<tr class="separator:a805ae66ee2eca741defa1f933b0e066c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Interface to the Snapdragon Navigator Flight Controller. </p>
-<p><a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Snapdragon Navigator Flight Controller. ">FlightControlInterface</a> is a thread-safe C++ wrapper around the Snapdragon Navigator API that makes it easier to accomplish some high-level actions like taking off and going to waypoints. It handles basic error checking so that the developer does not have to implement as much logic to check aspects of the flight controller's state during runtime, leading to safer API programs. </p>
+<div class="textblock"><p>Interface to the Qualcomm Navigator Flight Controller. </p>
+<p><a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Qualcomm Navigator Flight Controller. ">FlightControlInterface</a> is a thread-safe C++ wrapper around the Qualcomm Navigator API that makes it easier to accomplish some high-level actions like taking off and going to waypoints. It handles basic error checking so that the developer does not have to implement as much logic to check aspects of the flight controller's state during runtime, leading to safer API programs. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a class="anchor" id="ac59374dda40d909e1789a970ee032ed1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac59374dda40d909e1789a970ee032ed1">snav_fci::FlightControlInterface::Action</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Enum used for possible actions. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ac59374dda40d909e1789a970ee032ed1ab50339a10e1de285ac99d4c3990b8693"></a>NONE</em>&#160;</td><td class="fielddoc">
+<p>No action </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ac59374dda40d909e1789a970ee032ed1a8fabc74a4ed0781d663336cbf8c9c53d"></a>TAKEOFF</em>&#160;</td><td class="fielddoc">
+<p>Vehicle is taking off </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ac59374dda40d909e1789a970ee032ed1ae5baefb3771428cb7aa968a580bb6e65"></a>GO_TO_WAYPOINT</em>&#160;</td><td class="fielddoc">
+<p>Vehicle is going to a waypoint </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ac59374dda40d909e1789a970ee032ed1a47de55c1acf1d68fa5f991888b4ac8db"></a>EXECUTE_MISSION</em>&#160;</td><td class="fielddoc">
+<p>Vehicle is executing a mission </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ac59374dda40d909e1789a970ee032ed1a479a809c0b6eaaefd3b1df16f976df06"></a>LAND</em>&#160;</td><td class="fielddoc">
+<p>Vehicle is landing </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a class="anchor" id="ac00c18e2a3e63bfb759532ab9e17d1a1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -245,19 +347,16 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </table>
 </div><div class="memdoc">
 
-<p>Defines the permissions of an instance of <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Snapdragon Navigator Flight Controller. ">FlightControlInterface</a>. </p>
-<p>An instance with READ_WRITE permissions can both send commands to and receive data from Snapdragon Navigator, whereas an instance with READ_ONLY permissions can only receive data from Snapdragon Navigator.</p>
-<p>Only one instance of <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Snapdragon Navigator Flight Controller. ">FlightControlInterface</a> in a given process can obtain READ_WRITE permissions. This is intended to be a safety mechanism, since commands should only come from a single source.</p>
-<dl class="section warning"><dt>Warning</dt><dd>This mechanism only works in a single process! A second instance of <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Snapdragon Navigator Flight Controller. ">FlightControlInterface</a> instantiated in a separate process can obtain READ_WRITE permissions. </dd></dl>
+<p>Defines the permissions of an instance of <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Qualcomm Navigator Flight Controller. ">FlightControlInterface</a>. </p>
+<p>An instance with READ_WRITE permissions can both send commands to and receive data from Qualcomm Navigator, whereas an instance with READ_ONLY permissions can only receive data from Qualcomm Navigator.</p>
+<p>Only one instance of <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Qualcomm Navigator Flight Controller. ">FlightControlInterface</a> in a given process can obtain READ_WRITE permissions. This is intended to be a safety mechanism, since commands should only come from a single source.</p>
+<dl class="section warning"><dt>Warning</dt><dd>This mechanism only works in a single process! A second instance of <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Qualcomm Navigator Flight Controller. ">FlightControlInterface</a> instantiated in a separate process can obtain READ_WRITE permissions, so it is ultimately up to the client to ensure that only one object sends commands. Multiple objects sending commands simultaneously results in undefined behavior. </dd></dl>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ac00c18e2a3e63bfb759532ab9e17d1a1ab50339a10e1de285ac99d4c3990b8693"></a>NONE</em>&#160;</td><td class="fielddoc">
-<p>No permissions; used for an uninitialized object </p>
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="ac00c18e2a3e63bfb759532ab9e17d1a1aa7b843fb734e3b3fea8e5f902d3f4144"></a>READ_WRITE</em>&#160;</td><td class="fielddoc">
-<p>Read and write permissions; capable of both sending commands to and receiving information from Snapdragon Navigator </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ac00c18e2a3e63bfb759532ab9e17d1a1aa7b843fb734e3b3fea8e5f902d3f4144"></a>READ_WRITE</em>&#160;</td><td class="fielddoc">
+<p>Read and write permissions; capable of both sending commands to and receiving information from Qualcomm Navigator </p>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="ac00c18e2a3e63bfb759532ab9e17d1a1a47c7e7cb36a953a8c47e02000036bb44"></a>READ_ONLY</em>&#160;</td><td class="fielddoc">
-<p>Read-only permissions; capable of receiving information from Snapdragon Navigator, but not capable of sending any commands </p>
+<p>Read-only permissions; capable of receiving information from Qualcomm Navigator, but not capable of sending any commands </p>
 </td></tr>
 </table>
 
@@ -281,7 +380,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </table>
 </div><div class="memdoc">
 
-<p>Return codes for <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Snapdragon Navigator Flight Controller. ">FlightControlInterface</a>. </p>
+<p>Return codes for <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Qualcomm Navigator Flight Controller. ">FlightControlInterface</a>. </p>
 <p>These return codes define whether or not a function executed successfully and, in the event of failure, why the failure occurred. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a8467d3a4b809d02d353dfa6c458feecead0749aaba8b833466dfcbb0428e4f89c"></a>SUCCESS</em>&#160;</td><td class="fielddoc">
@@ -290,59 +389,76 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr><td class="fieldname"><em><a class="anchor" id="a8467d3a4b809d02d353dfa6c458feecea36fc6065a3e970bc3e6b2e59da52bf2a"></a>FAILURE</em>&#160;</td><td class="fielddoc">
 <p>Action was not completed successfully </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a8467d3a4b809d02d353dfa6c458feecea02de9649e258d1dd94056e676061e969"></a>NOT_INITIALIZED</em>&#160;</td><td class="fielddoc">
-<p>Action was not completed successfully because object is not initialized </p>
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a8467d3a4b809d02d353dfa6c458feecea1940a630a2a25829533b90f9be04f184"></a>ALREADY_INITIALIZED</em>&#160;</td><td class="fielddoc">
-<p>Action was not completed successfully because object is already initialized </p>
-</td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a8467d3a4b809d02d353dfa6c458feecead91be9b5ceb9fe0af02b9b02413eccf8"></a>NOT_CONNECTED</em>&#160;</td><td class="fielddoc">
 <p>Action was not completed successfully because object is not connected </p>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a8467d3a4b809d02d353dfa6c458feecea76a89dd85825b6f0a6c7092a4dddc44b"></a>ALREADY_CONNECTED</em>&#160;</td><td class="fielddoc">
 <p>Action was not completed successfully because object is already connected </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a8467d3a4b809d02d353dfa6c458feecea22d1c5198ffef78f12181896348d3da3"></a>NO_WRITE_ACCESS</em>&#160;</td><td class="fielddoc">
-<p>Action was not completed successfully because object does not have write access </p>
+<tr><td class="fieldname"><em><a class="anchor" id="a8467d3a4b809d02d353dfa6c458feecea1d577991d33fbc42229bd9be38f5d651"></a>TRAJ_NOT_OPTIMIZED</em>&#160;</td><td class="fielddoc">
+<p>Action was not completed successfully because the trajectory was not optimized </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a8467d3a4b809d02d353dfa6c458feecea711ccbb90a53f079932b3f0de33bbe24"></a>WRITE_ACCESS_TAKEN</em>&#160;</td><td class="fielddoc">
-<p>Action was not completed successfully because write access has already been taken by another instance </p>
+<tr><td class="fieldname"><em><a class="anchor" id="a8467d3a4b809d02d353dfa6c458feecea210eada6c71cbf875bbd8e77b45aa830"></a>TRAJ_NOT_FEASIBLE</em>&#160;</td><td class="fielddoc">
+<p>Action was not completed successfully because a feasible trajectory satisfying the required constraints could not be generated </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a8467d3a4b809d02d353dfa6c458feecea2188ade13df339354cd8c383dda3f8bb"></a>INVALID_CONFIG</em>&#160;</td><td class="fielddoc">
-<p>Action was not completed successfully because given configuration is not valid </p>
+<tr><td class="fieldname"><em><a class="anchor" id="a8467d3a4b809d02d353dfa6c458feecea038b98ac9b1665ce7a3113abcdef1c4f"></a>ACTION_PREEMPTED</em>&#160;</td><td class="fielddoc">
+<p>Action was not completed successfully because it was preempted </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a8467d3a4b809d02d353dfa6c458feecea2515f551f110282e2660e640a286c40c"></a>NOT_IN_FLIGHT</em>&#160;</td><td class="fielddoc">
-<p>Action was not completed successfully because vehicle is not in flight </p>
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a8467d3a4b809d02d353dfa6c458feeceaa21c26369ef33ebb97e407b196675ef4"></a>IN_FLIGHT</em>&#160;</td><td class="fielddoc">
-<p>Action was not completed successfully because vehicle is already in flight </p>
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a8467d3a4b809d02d353dfa6c458feecea6afae85c81e24d106bec978e17b89ce7"></a>CONNECTION_LOST</em>&#160;</td><td class="fielddoc">
-<p>Action was not completed successfully because the connection to Snapdragon Navigator was lost </p>
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a8467d3a4b809d02d353dfa6c458feeceab88cac5c7171e6c45c39bc33f3f20063"></a>SNAV_CACHED_DATA_ERROR</em>&#160;</td><td class="fielddoc">
-<p>Action was not completed successfully because the SnavCachedData structure could not be properly initialized </p>
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a8467d3a4b809d02d353dfa6c458feecea5343bcd21aad65124478a61831f6949e"></a>NOT_SUPPORTED</em>&#160;</td><td class="fielddoc">
-<p>Action was not completed successfully because it is not supported given the current configuration </p>
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a8467d3a4b809d02d353dfa6c458feeceace46beb3c574170c356db010ee14b7a0"></a>PROP_START_FAILURE</em>&#160;</td><td class="fielddoc">
-<p>Action was not completed successfully because the propellers failed to start </p>
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a8467d3a4b809d02d353dfa6c458feecea1e160523e5774fb6c4adbf9fe5318f9e"></a>PROP_STOP_FAILURE</em>&#160;</td><td class="fielddoc">
-<p>Action was not completed successfully because the propellers failed to stop </p>
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a8467d3a4b809d02d353dfa6c458feecead32675ed38348d504738d247c1dd59e4"></a>IMPROPER_TX_COMMAND_MODE</em>&#160;</td><td class="fielddoc">
-<p>Action was not completed successfully because the configured tx command mode is not correct for the requested action </p>
+<tr><td class="fieldname"><em><a class="anchor" id="a8467d3a4b809d02d353dfa6c458feecea7f2dceac513a52fcf0e751379e4a66f2"></a>NO_LOCK</em>&#160;</td><td class="fielddoc">
+<p>Action was not completed successfully because the necessary mutex lock could not be acquired </p>
 </td></tr>
 </table>
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a6ef5df13e455e75d6c7d5d7872bc39c0"></a>
+<a class="anchor" id="a0150043eb43690003666101be9cff599"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">snav_fci::FlightControlInterface::FlightControlInterface </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac00c18e2a3e63bfb759532ab9e17d1a1">Permissions</a> &amp;&#160;</td>
+          <td class="paramname"><em>requested_access</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs an instance of <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Qualcomm Navigator Flight Controller. ">FlightControlInterface</a>. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>Flight controller is running</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Qualcomm Navigator Flight Controller. ">FlightControlInterface</a> object initialized (but not connected) with requested permissions</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">requested_permissions</td><td>Specifies desired permissions of this instance. Only one <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Qualcomm Navigator Flight Controller. ">FlightControlInterface</a> instance can be granted write permissions.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::runtime_error</td><td>If unable to initialize SnavCachedData (usually means that flight controller is not responding) </td></tr>
+    <tr><td class="paramname">std::logic_error</td><td>If requested <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac00c18e2a3e63bfb759532ab9e17d1a1aa7b843fb734e3b3fea8e5f902d3f4144">Permissions::READ_WRITE</a> but an object with write permissions has already been created </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a53bf6fdb24b9b2303b6b4588c6c05c77"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">snav_fci::FlightControlInterface::~FlightControlInterface </td>
@@ -351,14 +467,86 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Destructor of <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Snapdragon Navigator Flight Controller. ">FlightControlInterface</a>. </p>
-<p>Before object destruction, <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a3df7b504c53e6420c4da6be09f09a603" title="End connection to Snapdragon Navigator. ">disconnect()</a> is called if it was not called previously. </p>
+<p>Destructor of <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Qualcomm Navigator Flight Controller. ">FlightControlInterface</a>. </p>
+<p>Before object destruction, <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#aa62fda382f2d6c826c11e516cb3a5cfb" title="End connection to Qualcomm Navigator. ">disconnect()</a> is called if it was not called previously. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="add01e61a380cf5fba30bce31c567ef6d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a> snav_fci::FlightControlInterface::compute_trajectory </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classsnav__fci_1_1_state_vector.html">StateVector</a>&#160;</td>
+          <td class="paramname"><em>starting_state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compute a trajectory through the given waypoints. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>Object has <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac00c18e2a3e63bfb759532ab9e17d1a1aa7b843fb734e3b3fea8e5f902d3f4144">Permissions::READ_WRITE</a> </dd>
+<dd>
+Object has been connected via <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a2089a5dc2e00d16b84dafb05cb4aee9e" title="Establish connection to Qualcomm Navigator. ">connect()</a> </dd>
+<dd>
+At least one waypoint has been added via <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a9c7f753c190470f8ff783c9a505da730" title="Load a vector of waypoints. ">preload_waypoints()</a></dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Function result is returned</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">starting_state</td><td>State represented with respect to <a class="el" href="namespacesnav__fci.html#a5e47e6340086e7c66f46362d307e7b81a84fb4bfe2188c39fc1714bb1ddff27c9">ReferenceFrame::WAYPOINT</a> used as first constraint of trajectory</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece" title="Return codes for FlightControlInterface. ">FlightControlInterface::Return</a></dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::logic_error</td><td>If any precondition is violated </td></tr>
+    <tr><td class="paramname">std::logic_error</td><td>If waypoint timestamps are not monotonically increasing </td></tr>
+    <tr><td class="paramname">std::runtime_error</td><td>If trajectory generation fails </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aedc77400738e4bf79d48a0722f978586"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a> snav_fci::FlightControlInterface::configure_planner </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsnav__fci_1_1_planner_config.html">PlannerConfig</a> &amp;&#160;</td>
+          <td class="paramname"><em>config</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Specify the configuration options for the planner. </p>
+<p>If this function is not called, default options are used.</p>
+<dl class="section pre"><dt>Precondition</dt><dd>None</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Function result is returned</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">config</td><td>Defines options used by the planner</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece" title="Return codes for FlightControlInterface. ">FlightControlInterface::Return</a> </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a361aaafcd82b9e3087c4c99713cc47ed"></a>
 <div class="memitem">
 <div class="memproto">
@@ -373,8 +561,10 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
       </table>
 </div><div class="memdoc">
 
-<p>Specify configuration options for receiving data from Snapdragon Navigator. </p>
+<p>Specify configuration options for receiving data from Qualcomm Navigator. </p>
 <p>If this function is not called, default options are used.</p>
+<dl class="section pre"><dt>Precondition</dt><dd>Object has not been connected via <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a2089a5dc2e00d16b84dafb05cb4aee9e" title="Establish connection to Qualcomm Navigator. ">connect()</a></dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Object is configured to use given rx_config</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">rx_config</td><td>Defines options used in receiving data</td></tr>
@@ -382,11 +572,12 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece" title="Return codes for FlightControlInterface. ">FlightControlInterface::Return</a></dd></dl>
-<dl class="section note"><dt>Note</dt><dd><ul>
-<li>Must call <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a0864999c74a160e8181833dc9010c9e2" title="Initialize FlightControlInterface object. ">initialize()</a> prior to calling this function.</li>
-<li>If this function is called, it must be done prior to calling <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a2089a5dc2e00d16b84dafb05cb4aee9e" title="Establish connection to Snapdragon Navigator. ">connect()</a>. </li>
-</ul>
-</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::logic_error</td><td>If any precondition is violated </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -404,8 +595,12 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
       </table>
 </div><div class="memdoc">
 
-<p>Specify configuration options for sending commands to Snapdragon Navigator. </p>
+<p>Specify configuration options for sending commands to Qualcomm Navigator. </p>
 <p>If this function is not called, default options are used.</p>
+<dl class="section pre"><dt>Precondition</dt><dd>Object has <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac00c18e2a3e63bfb759532ab9e17d1a1aa7b843fb734e3b3fea8e5f902d3f4144">Permissions::READ_WRITE</a> </dd>
+<dd>
+Object has not been connected via <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a2089a5dc2e00d16b84dafb05cb4aee9e" title="Establish connection to Qualcomm Navigator. ">connect()</a></dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Object is configured to use given tx_config</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">tx_config</td><td>Defines options used in sending commands</td></tr>
@@ -413,11 +608,13 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece" title="Return codes for FlightControlInterface. ">FlightControlInterface::Return</a></dd></dl>
-<dl class="section note"><dt>Note</dt><dd><ul>
-<li>Must call <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a0864999c74a160e8181833dc9010c9e2" title="Initialize FlightControlInterface object. ">initialize()</a> prior to calling this function.</li>
-<li>If this function is called, it must be done prior to calling <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a2089a5dc2e00d16b84dafb05cb4aee9e" title="Establish connection to Snapdragon Navigator. ">connect()</a>. </li>
-</ul>
-</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::logic_error</td><td>If any precondition is violated </td></tr>
+    <tr><td class="paramname">std::runtime_error</td><td>If given config is impossible to achieve </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -434,22 +631,20 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
       </table>
 </div><div class="memdoc">
 
-<p>Establish connection to Snapdragon Navigator. </p>
-<p>Opens a connection between the <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Snapdragon Navigator Flight Controller. ">FlightControlInterface</a> object and Snapdragon Navigator.</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece" title="Return codes for FlightControlInterface. ">FlightControlInterface::Return</a></dd></dl>
-<dl class="section note"><dt>Note</dt><dd>Must call <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a0864999c74a160e8181833dc9010c9e2" title="Initialize FlightControlInterface object. ">initialize()</a> prior to calling this function. </dd></dl>
+<p>Establish connection to Qualcomm Navigator. </p>
+<p>Opens a persistent connection between the <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Qualcomm Navigator Flight Controller. ">FlightControlInterface</a> object and Qualcomm Navigator.</p>
+<dl class="section pre"><dt>Precondition</dt><dd>None</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Function result is returned</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece" title="Return codes for FlightControlInterface. ">FlightControlInterface::Return</a> </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="add2d81e268d2561e0648ef6da3f3f472"></a>
+<a class="anchor" id="accbf382d4c5f7cb3c4bdcceb6d9e47f0"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a> snav_fci::FlightControlInterface::convert_velocity_to_rc_command </td>
+          <td class="memname"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a> snav_fci::FlightControlInterface::convert_velocity_to_rc_command </td>
           <td>(</td>
           <td class="paramtype">const std::array&lt; float, 3 &gt;&#160;</td>
           <td class="paramname"><em>velocity</em>, </td>
@@ -472,33 +667,38 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Convert metric velocity command into an <a class="el" href="classsnav__fci_1_1_rc_command.html" title="Structure containing the inputs to the sn_send_rc_command() Snapdragon Navigator API function...">RcCommand</a> suitable for sending to the flight controller. </p>
+<p>Convert metric velocity command into an <a class="el" href="classsnav__fci_1_1_rc_command.html" title="Structure containing the inputs to the sn_send_rc_command() Qualcomm Navigator API function...">RcCommand</a> suitable for sending to the flight controller based on the configured mode. </p>
+<p>This function only works for closed-loop position control modes.</p>
+<dl class="section pre"><dt>Precondition</dt><dd>Object has been connected via <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a2089a5dc2e00d16b84dafb05cb4aee9e" title="Establish connection to Qualcomm Navigator. ">connect()</a> </dd>
+<dd>
+Object is configured for a closed-loop position control mode</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>rc_command is populated with appropriate commands</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">velocity</td><td>Desired velocity in meters per second with respect to the estimation frame </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">yaw_rate</td><td>Desired yaw rate in radians per second with respect to the estimation frame </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">velocity</td><td>Desired velocity in meters per second with respect to <a class="el" href="namespacesnav__fci.html#a5e47e6340086e7c66f46362d307e7b81a4ba6cc3c4a3e548faa9f171b2082e4b9">ReferenceFrame::ESTIMATION</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">yaw_rate</td><td>Desired yaw rate in radians per second with respect to <a class="el" href="namespacesnav__fci.html#a5e47e6340086e7c66f46362d307e7b81a4ba6cc3c4a3e548faa9f171b2082e4b9">ReferenceFrame::ESTIMATION</a> </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">rc_command</td><td>Resulting rc command ready to be sent to the flight controller</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece" title="Return codes for FlightControlInterface. ">FlightControlInterface::Return</a></dd></dl>
-<dl class="section note"><dt>Note</dt><dd><ul>
-<li>Must call <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a0864999c74a160e8181833dc9010c9e2" title="Initialize FlightControlInterface object. ">initialize()</a> prior to calling this function. </li>
-</ul>
-</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::logic_error</td><td>If any precondition is violated </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a class="anchor" id="a3df7b504c53e6420c4da6be09f09a603"></a>
+<a class="anchor" id="aa62fda382f2d6c826c11e516cb3a5cfb"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a> snav_fci::FlightControlInterface::disconnect </td>
@@ -507,125 +707,441 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>End connection to Snapdragon Navigator. </p>
+<p>End connection to Qualcomm Navigator. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece" title="Return codes for FlightControlInterface. ">FlightControlInterface::Return</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7b4cade23ff78807c5f68c0eabc09e0d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a> snav_fci::FlightControlInterface::execute_mission </td>
+          <td>(</td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>t_start</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Execute the trajectory-following mission. </p>
+<p>Causes the vehicle to execute the planned trajectory through the given waypoints. If no trajectory has been planned, one will be generated and consequently executed.</p>
+<dl class="section pre"><dt>Precondition</dt><dd>Object has <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac00c18e2a3e63bfb759532ab9e17d1a1aa7b843fb734e3b3fea8e5f902d3f4144">Permissions::READ_WRITE</a> </dd>
+<dd>
+Object has been connected via <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a2089a5dc2e00d16b84dafb05cb4aee9e" title="Establish connection to Qualcomm Navigator. ">connect()</a> </dd>
+<dd>
+Propellers are spinning </dd>
+<dd>
+No action is in progress </dd>
+<dd>
+At least one waypoint has been added via <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a9c7f753c190470f8ff783c9a505da730" title="Load a vector of waypoints. ">preload_waypoints()</a></dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac59374dda40d909e1789a970ee032ed1a47de55c1acf1d68fa5f991888b4ac8db">Action::EXECUTE_MISSION</a> is concluded due to either completion or preemption</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">t_start</td><td>Optional parameter defining the absolute start time for the mission in seconds according to the system-wide real time wall clock. Set t_start equal to zero for the mission to start immediately. If t_start is not zero, it must specify a moment in time in the future. t_start is used to establish time zero for "trajectory time," accessible via <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a55386fd4021611249cf3710dc45f8fee" title="Get the current trajectory time. ">get_trajectory_time()</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece" title="Return codes for FlightControlInterface. ">FlightControlInterface::Return</a></dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::logic_error</td><td>If any precondition is violated </td></tr>
+    <tr><td class="paramname">std::logic_error</td><td>If waypoint timestamps are not monotonically increasing </td></tr>
+    <tr><td class="paramname">std::runtime_error</td><td>If trajectory generation fails </td></tr>
+    <tr><td class="paramname">std::runtime_error</td><td>If tx/rx connection is lost </td></tr>
+    <tr><td class="paramname">std::invalid_argument</td><td>If t_start is negative or corresponds to a time in the past</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section note"><dt>Note</dt><dd><ul>
-<li>Must call <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a0864999c74a160e8181833dc9010c9e2" title="Initialize FlightControlInterface object. ">initialize()</a> prior to calling this function.</li>
-<li>Must call <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a2089a5dc2e00d16b84dafb05cb4aee9e" title="Establish connection to Snapdragon Navigator. ">connect()</a> prior to calling this function. </li>
+<li>Can be safely preempted by calling <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#af631361862122f33e7c385282f7b54b5" title="Send preempt signal to currently-executing action. ">preempt_current_action()</a>. </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a6be8805e0177ecf41294612d1787e2de"></a>
+<a class="anchor" id="a14b2225c9580c76ad0c0216c1bd6fe33"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a> snav_fci::FlightControlInterface::get_desired_state </td>
+          <td class="memname"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a> snav_fci::FlightControlInterface::execute_mission_nb </td>
+          <td>(</td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>t_start</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Non-blocking call to execute the trajectory-following mission. </p>
+<p>This is a non-blocking version of <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a7b4cade23ff78807c5f68c0eabc09e0d" title="Execute the trajectory-following mission. ">execute_mission()</a>.</p>
+<dl class="section pre"><dt>Precondition</dt><dd>See <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a7b4cade23ff78807c5f68c0eabc09e0d" title="Execute the trajectory-following mission. ">execute_mission()</a></dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac59374dda40d909e1789a970ee032ed1a47de55c1acf1d68fa5f991888b4ac8db">Action::EXECUTE_MISSION</a> has been initiated</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><ul>
+<li>Can be safely preempted by calling <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#af631361862122f33e7c385282f7b54b5" title="Send preempt signal to currently-executing action. ">preempt_current_action()</a>. </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7c11604b2ef1382ecda0026bdd7a45ca"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac59374dda40d909e1789a970ee032ed1">Action</a> snav_fci::FlightControlInterface::get_current_action </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the currently-executing action. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>None</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Current action is returned</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac59374dda40d909e1789a970ee032ed1" title="Enum used for possible actions. ">FlightControlInterface::Action</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af4183413cb34e42f8f5acdc97ac937b1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a> snav_fci::FlightControlInterface::get_current_trajectory </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; snav_traj_gen::SnavTrajectory &gt; &amp;&#160;</td>
+          <td class="paramname"><em>traj</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the current trajectory. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>None</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Function result is returned</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">traj</td><td>The current trajectory, possibly composed of multiple segments each defined by a SnavTrajectory object, which has been optimized and satisfies the constraints enforced by the Planner. This is valid only if function returns <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feecead0749aaba8b833466dfcbb0428e4f89c">Return::SUCCESS</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece" title="Return codes for FlightControlInterface. ">FlightControlInterface::Return</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afe6b45eee6f640945edbfa9fdb58cd3f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsnav__fci_1_1_state_vector.html">StateVector</a> snav_fci::FlightControlInterface::get_desired_state </td>
           <td>(</td>
           <td class="paramtype">const SnavCachedData &amp;&#160;</td>
-          <td class="paramname"><em>snav_data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classsnav__fci_1_1_state_vector.html">StateVector</a> &amp;&#160;</td>
-          <td class="paramname"><em>state</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
+          <td class="paramname"><em>snav_data</em></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Get the desired state as a <a class="el" href="classsnav__fci_1_1_state_vector.html" title="Structure containing position and yaw along with their derivatives. ">StateVector</a> with respect to <a class="el" href="namespacesnav__fci.html#a5e47e6340086e7c66f46362d307e7b81a84fb4bfe2188c39fc1714bb1ddff27c9">ReferenceFrame::WAYPOINT</a> from the SnavCachedData structure. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>None</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Desired state is returned</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">snav_data</td><td>Structure containing data from the cache </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">state</td><td>Desired state vector represented with respect to <a class="el" href="namespacesnav__fci.html#a5e47e6340086e7c66f46362d307e7b81a84fb4bfe2188c39fc1714bb1ddff27c9">ReferenceFrame::WAYPOINT</a></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">snav_data</td><td>Structure containing data from the cache</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece" title="Return codes for FlightControlInterface. ">FlightControlInterface::Return</a></dd></dl>
-<dl class="section note"><dt>Note</dt><dd><ul>
-<li>Must call <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a0864999c74a160e8181833dc9010c9e2" title="Initialize FlightControlInterface object. ">initialize()</a> prior to calling this function. </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Desired state vector represented with respect to <a class="el" href="namespacesnav__fci.html#a5e47e6340086e7c66f46362d307e7b81a84fb4bfe2188c39fc1714bb1ddff27c9">ReferenceFrame::WAYPOINT</a> </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a4697f753d0265b6e487415cf88f86d8c"></a>
+<a class="anchor" id="a21dabfe7b823c2c73176c65aaaab6df0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a> snav_fci::FlightControlInterface::get_estimated_state </td>
+          <td class="memname"><a class="el" href="classsnav__fci_1_1_state_vector.html">StateVector</a> snav_fci::FlightControlInterface::get_estimated_state </td>
           <td>(</td>
           <td class="paramtype">const SnavCachedData &amp;&#160;</td>
-          <td class="paramname"><em>snav_data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classsnav__fci_1_1_state_vector.html">StateVector</a> &amp;&#160;</td>
-          <td class="paramname"><em>state</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
+          <td class="paramname"><em>snav_data</em></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Get the estimated state as a <a class="el" href="classsnav__fci_1_1_state_vector.html" title="Structure containing position and yaw along with their derivatives. ">StateVector</a> with respect to <a class="el" href="namespacesnav__fci.html#a5e47e6340086e7c66f46362d307e7b81a84fb4bfe2188c39fc1714bb1ddff27c9">ReferenceFrame::WAYPOINT</a> from the SnavCachedData structure. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>None</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Estimated state is returned</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">snav_data</td><td>Structure containing data from the cache </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">state</td><td>Estimated state vector represented with respect to <a class="el" href="namespacesnav__fci.html#a5e47e6340086e7c66f46362d307e7b81a84fb4bfe2188c39fc1714bb1ddff27c9">ReferenceFrame::WAYPOINT</a></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">snav_data</td><td>Structure containing data from the cache</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece" title="Return codes for FlightControlInterface. ">FlightControlInterface::Return</a></dd></dl>
-<dl class="section note"><dt>Note</dt><dd><ul>
-<li>Must call <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a0864999c74a160e8181833dc9010c9e2" title="Initialize FlightControlInterface object. ">initialize()</a> prior to calling this function. </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Estimated state vector represented with respect to <a class="el" href="namespacesnav__fci.html#a5e47e6340086e7c66f46362d307e7b81a84fb4bfe2188c39fc1714bb1ddff27c9">ReferenceFrame::WAYPOINT</a> </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a05cbddb7220afc64615caf40b7e3d1ce"></a>
+<a class="anchor" id="adf857369ab1c12dc4e440fb9ee6a732b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac59374dda40d909e1789a970ee032ed1">Action</a> snav_fci::FlightControlInterface::get_last_action </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the most recently executed action. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>None</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Last action is returned</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac59374dda40d909e1789a970ee032ed1" title="Enum used for possible actions. ">FlightControlInterface::Action</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab4bea64f70862efdb62223e70ac1c441"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a> snav_fci::FlightControlInterface::get_last_action_result </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the result of the most recently executed action. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>None</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Last action result is returned</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece" title="Return codes for FlightControlInterface. ">FlightControlInterface::Return</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="adee5c0e2a9598260759fee18378a6bed"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a> snav_fci::FlightControlInterface::get_snav_cached_data </td>
+          <td class="memname"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a> snav_fci::FlightControlInterface::get_last_optimized_trajectory </td>
           <td>(</td>
-          <td class="paramtype">SnavCachedData &amp;&#160;</td>
-          <td class="paramname"><em>data</em></td><td>)</td>
+          <td class="paramtype">std::vector&lt; snav_traj_gen::SnavTrajectory &gt; &amp;&#160;</td>
+          <td class="paramname"><em>traj</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the last optimized trajectory. </p>
+<p>The last optimized trajectory may be different from the current trajectory if the last optimized trajectory failed to satisfy the constraints enforced by the Planner.</p>
+<dl class="section pre"><dt>Precondition</dt><dd>None</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Function result is returned</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">traj</td><td>The last optimized trajectory, possibly composed of multiple segments each defined by a SnavTrajectory object, which has been optimized but does not necessarily satisfy the constraints enforced by the Planner. Only valid if function returns <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feecead0749aaba8b833466dfcbb0428e4f89c">Return::SUCCESS</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece" title="Return codes for FlightControlInterface. ">FlightControlInterface::Return</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2df567db7227659f09d5a4f4b5143b4f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a> snav_fci::FlightControlInterface::get_optimized_waypoints </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classsnav__fci_1_1_waypoint.html">Waypoint</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>waypoints</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the optimized waypoints. </p>
+<p>The optimized waypoints are different from the input waypoints in that they are an augmented set of the input waypoints. For example, the optimized waypoints contain at least one extra waypoint prepended to the start of the vector containing the current state. Further, they contain the higher derivatives computed from the optimization.</p>
+<dl class="section pre"><dt>Precondition</dt><dd>None</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Optimized waypoints are returned</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">waypoints</td><td>Vector of optimized waypoints used by planner</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece" title="Return codes for FlightControlInterface. ">FlightControlInterface::Return</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4c8415ddad03dfd7385e2ac73d214bc9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac00c18e2a3e63bfb759532ab9e17d1a1">Permissions</a> snav_fci::FlightControlInterface::get_permissions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the permissions of this object. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>None</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Permissions are returned</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Permissions </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4ba6ca9d9af3829a9cf623a418136f13"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Planner::Status snav_fci::FlightControlInterface::get_planner_status </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the current status of the Planner. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>None</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Planner status is returned</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Planner::Status Current status of the planner </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a805ae66ee2eca741defa1f933b0e066c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::string snav_fci::FlightControlInterface::get_return_as_string </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a>&#160;</td>
+          <td class="paramname"><em>ret_code</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Convert a Return code to a string. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>None</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>String representation of ret_code is returned</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ret_code</td><td>Return code to convert to string</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::string </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a096e6be8915758d513644f8266c24dd7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SnavCachedData snav_fci::FlightControlInterface::get_snav_cached_data </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Get a copy of the latest data from the cache. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">data</td><td>Structure to be filled with a copy of the latest cached data</td></tr>
+<dl class="section pre"><dt>Precondition</dt><dd>Object has been connected via <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a2089a5dc2e00d16b84dafb05cb4aee9e" title="Establish connection to Qualcomm Navigator. ">connect()</a></dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>SnavCachedData is returned</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Latest cached data</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::logic_error</td><td>If any precondition is violated </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece" title="Return codes for FlightControlInterface. ">FlightControlInterface::Return</a></dd></dl>
-<dl class="section note"><dt>Note</dt><dd><ul>
-<li>Must call <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a0864999c74a160e8181833dc9010c9e2" title="Initialize FlightControlInterface object. ">initialize()</a> prior to calling this function.</li>
-<li>Must call <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a2089a5dc2e00d16b84dafb05cb4aee9e" title="Establish connection to Snapdragon Navigator. ">connect()</a> prior to calling this function. </li>
-</ul>
-</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a55386fd4021611249cf3710dc45f8fee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float snav_fci::FlightControlInterface::get_trajectory_time </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the current trajectory time. </p>
+<p>Trajectory time is relative to the current trajectory. The start of the trajectory corresponds to time zero.</p>
+<dl class="section pre"><dt>Precondition</dt><dd>None</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Trajectory time is returned</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>float Trajectory time in s </dd></dl>
 
 </div>
 </div>
@@ -654,6 +1170,8 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div><div class="memdoc">
 
 <p>Get the transform between <a class="el" href="namespacesnav__fci.html#a5e47e6340086e7c66f46362d307e7b81a84fb4bfe2188c39fc1714bb1ddff27c9">ReferenceFrame::WAYPOINT</a> and its parent. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>None</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="namespacesnav__fci.html#a5e47e6340086e7c66f46362d307e7b81a84fb4bfe2188c39fc1714bb1ddff27c9">ReferenceFrame::WAYPOINT</a> transform is returned</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">q_pq</td><td>Quaternion representing the orientation of <a class="el" href="namespacesnav__fci.html#a5e47e6340086e7c66f46362d307e7b81a84fb4bfe2188c39fc1714bb1ddff27c9">ReferenceFrame::WAYPOINT</a> with respect to its parent</td></tr>
@@ -661,9 +1179,36 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece" title="Return codes for FlightControlInterface. ">FlightControlInterface::Return</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0f07f36c5a353a139afc46276f95a050"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a> snav_fci::FlightControlInterface::get_waypoints </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classsnav__fci_1_1_waypoint.html">Waypoint</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>waypoints</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the input waypoints. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>None</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Waypoints are returned</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">waypoints</td><td>Vector of input waypoints used by planner</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece" title="Return codes for FlightControlInterface. ">FlightControlInterface::Return</a></dd></dl>
 <dl class="section note"><dt>Note</dt><dd><ul>
-<li>Must call <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a0864999c74a160e8181833dc9010c9e2" title="Initialize FlightControlInterface object. ">initialize()</a> prior to calling this function. </li>
+<li>Use the <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a9c7f753c190470f8ff783c9a505da730" title="Load a vector of waypoints. ">preload_waypoints()</a> function to add input waypoints </li>
 </ul>
 </dd></dl>
 
@@ -684,6 +1229,14 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div><div class="memdoc">
 
 <p>Blocking call to go to specified waypoint. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>Object has <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac00c18e2a3e63bfb759532ab9e17d1a1aa7b843fb734e3b3fea8e5f902d3f4144">Permissions::READ_WRITE</a> </dd>
+<dd>
+Object has been connected via <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a2089a5dc2e00d16b84dafb05cb4aee9e" title="Establish connection to Qualcomm Navigator. ">connect()</a> </dd>
+<dd>
+Propellers are spinning </dd>
+<dd>
+No action is in progress</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac59374dda40d909e1789a970ee032ed1ae5baefb3771428cb7aa968a580bb6e65">Action::GO_TO_WAYPOINT</a> is concluded due to either completion or preemption</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">waypoint</td><td>Specifies the destination waypoint represented with respect to <a class="el" href="namespacesnav__fci.html#a5e47e6340086e7c66f46362d307e7b81a84fb4bfe2188c39fc1714bb1ddff27c9">ReferenceFrame::WAYPOINT</a></td></tr>
@@ -691,38 +1244,42 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece" title="Return codes for FlightControlInterface. ">FlightControlInterface::Return</a></dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::logic_error</td><td>If any precondition is violated </td></tr>
+    <tr><td class="paramname">std::runtime_error</td><td>If tx/rx connection is lost</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section note"><dt>Note</dt><dd><ul>
-<li>Must call <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a0864999c74a160e8181833dc9010c9e2" title="Initialize FlightControlInterface object. ">initialize()</a> prior to calling this function.</li>
-<li>Object must have permissions set to <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac00c18e2a3e63bfb759532ab9e17d1a1aa7b843fb734e3b3fea8e5f902d3f4144">Permissions::READ_WRITE</a>.</li>
-<li>Must call <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a2089a5dc2e00d16b84dafb05cb4aee9e" title="Establish connection to Snapdragon Navigator. ">connect()</a> prior to calling this function. </li>
+<li>Can be safely preempted by calling <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#af631361862122f33e7c385282f7b54b5" title="Send preempt signal to currently-executing action. ">preempt_current_action()</a>. </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a0864999c74a160e8181833dc9010c9e2"></a>
+<a class="anchor" id="aa11437d4bebc1b85a89c73ab50926547"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a> snav_fci::FlightControlInterface::initialize </td>
+          <td class="memname"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a> snav_fci::FlightControlInterface::go_to_waypoint_nb </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac00c18e2a3e63bfb759532ab9e17d1a1">Permissions</a>&#160;</td>
-          <td class="paramname"><em>requested_permissions</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classsnav__fci_1_1_waypoint.html">Waypoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>waypoint</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Snapdragon Navigator Flight Controller. ">FlightControlInterface</a> object. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">requested_permissions</td><td>Specifies desired permissions of this instance. Only one <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Snapdragon Navigator Flight Controller. ">FlightControlInterface</a> instance can be granted write permissions.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece" title="Return codes for FlightControlInterface. ">FlightControlInterface::Return</a></dd></dl>
-<dl class="section note"><dt>Note</dt><dd>Should be called immediately after object construction. </dd></dl>
+<p>Non-blocking call to go to specified waypoint. </p>
+<p>This is a non-blocking version of <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a2ed6cccf77eaced99a8704867cdc2321" title="Blocking call to go to specified waypoint. ">go_to_waypoint()</a>.</p>
+<dl class="section pre"><dt>Precondition</dt><dd>See <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a2ed6cccf77eaced99a8704867cdc2321" title="Blocking call to go to specified waypoint. ">go_to_waypoint()</a></dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac59374dda40d909e1789a970ee032ed1ae5baefb3771428cb7aa968a580bb6e65">Action::GO_TO_WAYPOINT</a> has been initiated</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><ul>
+<li>Can be safely preempted by calling <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#af631361862122f33e7c385282f7b54b5" title="Send preempt signal to currently-executing action. ">preempt_current_action()</a>. </li>
+</ul>
+</dd></dl>
 
 </div>
 </div>
@@ -742,6 +1299,14 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 
 <p>Blocking call to land. </p>
 <p>This function commands the vehicle to descend until reaching the ground, at which point it attempts to stop the propellers via <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a6ffa0351aaf623667689d1d80b88f94b" title="Blocking call to stop the propellers. ">stop_props()</a>.</p>
+<dl class="section pre"><dt>Precondition</dt><dd>Object has <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac00c18e2a3e63bfb759532ab9e17d1a1aa7b843fb734e3b3fea8e5f902d3f4144">Permissions::READ_WRITE</a> </dd>
+<dd>
+Object has been connected via <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a2089a5dc2e00d16b84dafb05cb4aee9e" title="Establish connection to Qualcomm Navigator. ">connect()</a> </dd>
+<dd>
+Propellers are spinning </dd>
+<dd>
+No action is in progress</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac59374dda40d909e1789a970ee032ed1a479a809c0b6eaaefd3b1df16f976df06">Action::LAND</a> is concluded due to either completion or preemption</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">landing_config</td><td>Specifies parameters for landing</td></tr>
@@ -749,10 +1314,15 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece" title="Return codes for FlightControlInterface. ">FlightControlInterface::Return</a></dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::logic_error</td><td>If any precondition is violated </td></tr>
+    <tr><td class="paramname">std::runtime_error</td><td>If tx/rx connection is lost</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section note"><dt>Note</dt><dd><ul>
-<li>Must call <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a0864999c74a160e8181833dc9010c9e2" title="Initialize FlightControlInterface object. ">initialize()</a> prior to calling this function.</li>
-<li>Object must have permissions set to <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac00c18e2a3e63bfb759532ab9e17d1a1aa7b843fb734e3b3fea8e5f902d3f4144">Permissions::READ_WRITE</a>.</li>
-<li>Must call <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a2089a5dc2e00d16b84dafb05cb4aee9e" title="Establish connection to Snapdragon Navigator. ">connect()</a> prior to calling this function. </li>
+<li>Can be safely preempted by calling <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#af631361862122f33e7c385282f7b54b5" title="Send preempt signal to currently-executing action. ">preempt_current_action()</a>. </li>
 </ul>
 </dd></dl>
 
@@ -774,6 +1344,84 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 
 </div>
 </div>
+<a class="anchor" id="aac04116339ecd72292a435c495051086"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a> snav_fci::FlightControlInterface::land_nb </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structsnav__fci_1_1_landing_config.html">LandingConfig</a> &amp;&#160;</td>
+          <td class="paramname"><em>landing_config</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Non-blocking call to land. </p>
+<p>This is a non-blocking version of <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a6e5098c20c65cb1cda1b8df7f14b7d01">land()</a>.</p>
+<dl class="section pre"><dt>Precondition</dt><dd>See <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a6e5098c20c65cb1cda1b8df7f14b7d01">land()</a></dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac59374dda40d909e1789a970ee032ed1a479a809c0b6eaaefd3b1df16f976df06">Action::LAND</a> has been initiated</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><ul>
+<li>Can be safely preempted by calling <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#af631361862122f33e7c385282f7b54b5" title="Send preempt signal to currently-executing action. ">preempt_current_action()</a>. </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aaba734fa3ea18d718763298887c1dc4d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a> snav_fci::FlightControlInterface::land_nb </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9c7f753c190470f8ff783c9a505da730"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a> snav_fci::FlightControlInterface::preload_waypoints </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classsnav__fci_1_1_waypoint.html">Waypoint</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>waypoints</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Load a vector of waypoints. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>Object has <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac00c18e2a3e63bfb759532ab9e17d1a1aa7b843fb734e3b3fea8e5f902d3f4144">Permissions::READ_WRITE</a> </dd>
+<dd>
+Object has been connected via <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a2089a5dc2e00d16b84dafb05cb4aee9e" title="Establish connection to Qualcomm Navigator. ">connect()</a> </dd>
+<dd>
+Planner status is IDLE</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Waypoints have been added to planner</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">waypoints</td><td>Waypoints to pass to planner.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece" title="Return codes for FlightControlInterface. ">FlightControlInterface::Return</a></dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::logic_error</td><td>If any precondition is violated </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a1e8f038a2b6dd6c803b4aa89f1c801d4"></a>
 <div class="memitem">
 <div class="memproto">
@@ -790,6 +1438,11 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 
 <p>Directly set the command being sent to the flight controller. </p>
 <p>This function sets the command being sent to the flight controller in the tx thread. Calling this function will only have an impact if the tx thread is configured for sending this type of command.</p>
+<dl class="section pre"><dt>Precondition</dt><dd>Object has <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac00c18e2a3e63bfb759532ab9e17d1a1aa7b843fb734e3b3fea8e5f902d3f4144">Permissions::READ_WRITE</a> </dd>
+<dd>
+Object has been connected via <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a2089a5dc2e00d16b84dafb05cb4aee9e" title="Establish connection to Qualcomm Navigator. ">connect()</a> </dd>
+<dd>
+Object has been configured for sending this type of command; refer to <a class="el" href="classsnav__fci_1_1_tx_config.html" title="Structure containing options for the TX thread. ">TxConfig</a> for options</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">command</td><td>Command to be sent to the flight controller</td></tr>
@@ -797,13 +1450,12 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece" title="Return codes for FlightControlInterface. ">FlightControlInterface::Return</a></dd></dl>
-<dl class="section note"><dt>Note</dt><dd><ul>
-<li>Must call <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a0864999c74a160e8181833dc9010c9e2" title="Initialize FlightControlInterface object. ">initialize()</a> prior to calling this function.</li>
-<li>Object must have permissions set to <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac00c18e2a3e63bfb759532ab9e17d1a1aa7b843fb734e3b3fea8e5f902d3f4144">Permissions::READ_WRITE</a>.</li>
-<li>Must call <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a2089a5dc2e00d16b84dafb05cb4aee9e" title="Establish connection to Snapdragon Navigator. ">connect()</a> prior to calling this function.</li>
-<li>Tx thread must be configured for sending this type of command; refer to <a class="el" href="classsnav__fci_1_1_tx_config.html" title="Structure containing options for the TX thread. ">TxConfig</a> for options. </li>
-</ul>
-</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::logic_error</td><td>If any precondition is violated </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -829,11 +1481,13 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </table>
 </div><div class="memdoc">
 
-<p>Set verbosity of <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Snapdragon Navigator Flight Controller. ">FlightControlInterface</a>. </p>
-<p>By default, verbosity of <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Snapdragon Navigator Flight Controller. ">FlightControlInterface</a> is set to true. When true, <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Snapdragon Navigator Flight Controller. ">FlightControlInterface</a> emits informational messages to std::out and error messages to std::cerr.</p>
+<p>Set verbosity of <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Qualcomm Navigator Flight Controller. ">FlightControlInterface</a>. </p>
+<p>By default, verbosity of <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Qualcomm Navigator Flight Controller. ">FlightControlInterface</a> is set to true. When true, <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Qualcomm Navigator Flight Controller. ">FlightControlInterface</a> emits informational messages to std::out and error messages to std::cerr.</p>
+<dl class="section pre"><dt>Precondition</dt><dd>None</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Verbosity is set to value of verbose</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">verbose</td><td>Desired verbosity of <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Snapdragon Navigator Flight Controller. ">FlightControlInterface</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">verbose</td><td>Desired verbosity of <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Qualcomm Navigator Flight Controller. ">FlightControlInterface</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -865,7 +1519,9 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div><div class="memdoc">
 
 <p>Updates the transform between <a class="el" href="namespacesnav__fci.html#a5e47e6340086e7c66f46362d307e7b81a84fb4bfe2188c39fc1714bb1ddff27c9">ReferenceFrame::WAYPOINT</a> and its parent. </p>
-<p><a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Snapdragon Navigator Flight Controller. ">FlightControlInterface</a> expects waypoints to be given with respect to <a class="el" href="namespacesnav__fci.html#a5e47e6340086e7c66f46362d307e7b81a84fb4bfe2188c39fc1714bb1ddff27c9">ReferenceFrame::WAYPOINT</a>. The transformation between <a class="el" href="namespacesnav__fci.html#a5e47e6340086e7c66f46362d307e7b81a84fb4bfe2188c39fc1714bb1ddff27c9">ReferenceFrame::WAYPOINT</a> and its parent, defined by <a class="el" href="classsnav__fci_1_1_tx_config.html#aa52c50a575aad325b3c3cf1eb8d23d21">TxConfig::waypoint_frame_parent</a>, is initialized to identity rotation and zero translation.</p>
+<p><a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Qualcomm Navigator Flight Controller. ">FlightControlInterface</a> expects waypoints to be given with respect to <a class="el" href="namespacesnav__fci.html#a5e47e6340086e7c66f46362d307e7b81a84fb4bfe2188c39fc1714bb1ddff27c9">ReferenceFrame::WAYPOINT</a>. The transformation between <a class="el" href="namespacesnav__fci.html#a5e47e6340086e7c66f46362d307e7b81a84fb4bfe2188c39fc1714bb1ddff27c9">ReferenceFrame::WAYPOINT</a> and its parent, defined by <a class="el" href="classsnav__fci_1_1_tx_config.html#aa52c50a575aad325b3c3cf1eb8d23d21">TxConfig::waypoint_frame_parent</a>, is initialized to identity rotation and zero translation.</p>
+<dl class="section pre"><dt>Precondition</dt><dd>None</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Transform is updated</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">q_pw</td><td>Quaternion representing the orientation of <a class="el" href="namespacesnav__fci.html#a5e47e6340086e7c66f46362d307e7b81a84fb4bfe2188c39fc1714bb1ddff27c9">ReferenceFrame::WAYPOINT</a> with respect to its parent</td></tr>
@@ -873,11 +1529,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece" title="Return codes for FlightControlInterface. ">FlightControlInterface::Return</a></dd></dl>
-<dl class="section note"><dt>Note</dt><dd><ul>
-<li>Must call <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a0864999c74a160e8181833dc9010c9e2" title="Initialize FlightControlInterface object. ">initialize()</a> prior to calling this function. </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece" title="Return codes for FlightControlInterface. ">FlightControlInterface::Return</a> </dd></dl>
 
 </div>
 </div>
@@ -896,13 +1548,19 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 
 <p>Blocking call to start the propellers. </p>
 <p>In general, favor calling <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ad5b48a5288b154ec634a4720701fc4b1">takeoff()</a>, which automatically calls <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a0f5377339ca3af395c97d0af431d06b7" title="Blocking call to start the propellers. ">start_props()</a> at the appropriate time, instead of manually calling this function.</p>
+<dl class="section pre"><dt>Precondition</dt><dd>Object has <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac00c18e2a3e63bfb759532ab9e17d1a1aa7b843fb734e3b3fea8e5f902d3f4144">Permissions::READ_WRITE</a> </dd>
+<dd>
+Object has been connected via <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a2089a5dc2e00d16b84dafb05cb4aee9e" title="Establish connection to Qualcomm Navigator. ">connect()</a></dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Propellers are spinning according to flight controller</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece" title="Return codes for FlightControlInterface. ">FlightControlInterface::Return</a></dd></dl>
-<dl class="section note"><dt>Note</dt><dd><ul>
-<li>Must call <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a0864999c74a160e8181833dc9010c9e2" title="Initialize FlightControlInterface object. ">initialize()</a> prior to calling this function.</li>
-<li>Object must have permissions set to <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac00c18e2a3e63bfb759532ab9e17d1a1aa7b843fb734e3b3fea8e5f902d3f4144">Permissions::READ_WRITE</a>.</li>
-<li>Must call <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a2089a5dc2e00d16b84dafb05cb4aee9e" title="Establish connection to Snapdragon Navigator. ">connect()</a> prior to calling this function. </li>
-</ul>
-</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::logic_error</td><td>If any precondition is violated </td></tr>
+    <tr><td class="paramname">std::runtime_error</td><td>If tx/rx connection is lost </td></tr>
+    <tr><td class="paramname">std::runtime_error</td><td>If unable to start props </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -921,13 +1579,19 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 
 <p>Blocking call to stop the propellers. </p>
 <p>In general, favor calling <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a6e5098c20c65cb1cda1b8df7f14b7d01">land()</a>, which automatically calls <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a6ffa0351aaf623667689d1d80b88f94b" title="Blocking call to stop the propellers. ">stop_props()</a> at the appropriate time, instead of manually calling this function.</p>
+<dl class="section pre"><dt>Precondition</dt><dd>Object has <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac00c18e2a3e63bfb759532ab9e17d1a1aa7b843fb734e3b3fea8e5f902d3f4144">Permissions::READ_WRITE</a> </dd>
+<dd>
+Object has been connected via <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a2089a5dc2e00d16b84dafb05cb4aee9e" title="Establish connection to Qualcomm Navigator. ">connect()</a></dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Propellers are not spinning according to flight controller</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece" title="Return codes for FlightControlInterface. ">FlightControlInterface::Return</a></dd></dl>
-<dl class="section note"><dt>Note</dt><dd><ul>
-<li>Must call <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a0864999c74a160e8181833dc9010c9e2" title="Initialize FlightControlInterface object. ">initialize()</a> prior to calling this function.</li>
-<li>Object must have permissions set to <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac00c18e2a3e63bfb759532ab9e17d1a1aa7b843fb734e3b3fea8e5f902d3f4144">Permissions::READ_WRITE</a>.</li>
-<li>Must call <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a2089a5dc2e00d16b84dafb05cb4aee9e" title="Establish connection to Snapdragon Navigator. ">connect()</a> prior to calling this function. </li>
-</ul>
-</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::logic_error</td><td>If any precondition is violated </td></tr>
+    <tr><td class="paramname">std::runtime_error</td><td>If tx/rx connection is lost </td></tr>
+    <tr><td class="paramname">std::runtime_error</td><td>If unable to stop props </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -947,6 +1611,14 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 
 <p>Blocking call to takeoff. </p>
 <p>This function attempts to spin the propellers via <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a0f5377339ca3af395c97d0af431d06b7" title="Blocking call to start the propellers. ">start_props()</a> and to take off to a specified height above the ground.</p>
+<dl class="section pre"><dt>Precondition</dt><dd>Object has <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac00c18e2a3e63bfb759532ab9e17d1a1aa7b843fb734e3b3fea8e5f902d3f4144">Permissions::READ_WRITE</a> </dd>
+<dd>
+Object has been connected via <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a2089a5dc2e00d16b84dafb05cb4aee9e" title="Establish connection to Qualcomm Navigator. ">connect()</a> </dd>
+<dd>
+Propellers are not spinning </dd>
+<dd>
+No action is in progress</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac59374dda40d909e1789a970ee032ed1a8fabc74a4ed0781d663336cbf8c9c53d">Action::TAKEOFF</a> is concluded due to either completion or preemption</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">takeoff_config</td><td>Specifies parameters for takeoff</td></tr>
@@ -954,11 +1626,15 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece" title="Return codes for FlightControlInterface. ">FlightControlInterface::Return</a></dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::logic_error</td><td>If any precondition is violated </td></tr>
+    <tr><td class="paramname">std::runtime_error</td><td>If tx/rx connection is lost</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section note"><dt>Note</dt><dd><ul>
-<li>Must call <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a0864999c74a160e8181833dc9010c9e2" title="Initialize FlightControlInterface object. ">initialize()</a> prior to calling this function.</li>
-<li>Object must have permissions set to <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac00c18e2a3e63bfb759532ab9e17d1a1aa7b843fb734e3b3fea8e5f902d3f4144">Permissions::READ_WRITE</a>.</li>
-<li>Must call <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a2089a5dc2e00d16b84dafb05cb4aee9e" title="Establish connection to Snapdragon Navigator. ">connect()</a> prior to calling this function.</li>
-<li>Propellers must not be spinning when calling this function. </li>
+<li>Can be safely preempted by calling <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#af631361862122f33e7c385282f7b54b5" title="Send preempt signal to currently-executing action. ">preempt_current_action()</a>. </li>
 </ul>
 </dd></dl>
 
@@ -980,21 +1656,100 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 
 </div>
 </div>
-<a class="anchor" id="a6888c4dbf0aa06dade7b59ff632fa929"></a>
+<a class="anchor" id="aa626b54e15e7188e8c80b158d5cd2b34"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void snav_fci::FlightControlInterface::wait_for_configure </td>
+          <td class="memname"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a> snav_fci::FlightControlInterface::takeoff_nb </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structsnav__fci_1_1_takeoff_config.html">TakeoffConfig</a> &amp;&#160;</td>
+          <td class="paramname"><em>takeoff_config</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Non-blocking call to takeoff. </p>
+<p>This is a non-blocking version of <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ad5b48a5288b154ec634a4720701fc4b1">takeoff()</a>.</p>
+<dl class="section pre"><dt>Precondition</dt><dd>See <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ad5b48a5288b154ec634a4720701fc4b1">takeoff()</a></dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac59374dda40d909e1789a970ee032ed1a8fabc74a4ed0781d663336cbf8c9c53d">Action::TAKEOFF</a> has been initiated</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><ul>
+<li>Can be safely preempted by calling <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#af631361862122f33e7c385282f7b54b5" title="Send preempt signal to currently-executing action. ">preempt_current_action()</a>. </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a872b310a1e2ef214f52b00202bd73eb8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feece">Return</a> snav_fci::FlightControlInterface::takeoff_nb </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
 
-<p>Block until <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Snapdragon Navigator Flight Controller. ">FlightControlInterface</a> has been configured. </p>
-<p>This function can be used in a multithreaded architecture to synchronize multiple <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Snapdragon Navigator Flight Controller. ">FlightControlInterface</a> objects before calling <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a2089a5dc2e00d16b84dafb05cb4aee9e" title="Establish connection to Snapdragon Navigator. ">connect()</a> to ensure that the object with <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac00c18e2a3e63bfb759532ab9e17d1a1aa7b843fb734e3b3fea8e5f902d3f4144">Permissions::READ_WRITE</a> has an opportunity to set the desired configuration. This is necessary because it would otherwise be possible for an object with <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac00c18e2a3e63bfb759532ab9e17d1a1a47c7e7cb36a953a8c47e02000036bb44">Permissions::READ_ONLY</a> to spawn the rx thread prior to the rx configuration being set from a separate thread. </p>
+</div>
+</div>
+<a class="anchor" id="a23e8c02bb45d4f96ed892587dc7a8cbd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void snav_fci::FlightControlInterface::wait_for_configure </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Block until <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Qualcomm Navigator Flight Controller. ">FlightControlInterface</a> has been configured. </p>
+<p>This function can be used in a multithreaded architecture to synchronize multiple <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Qualcomm Navigator Flight Controller. ">FlightControlInterface</a> objects before calling <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a2089a5dc2e00d16b84dafb05cb4aee9e" title="Establish connection to Qualcomm Navigator. ">connect()</a> to ensure that the object with <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac00c18e2a3e63bfb759532ab9e17d1a1aa7b843fb734e3b3fea8e5f902d3f4144">Permissions::READ_WRITE</a> has an opportunity to set the desired configuration. This is necessary because it would otherwise be possible for an object with <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac00c18e2a3e63bfb759532ab9e17d1a1a47c7e7cb36a953a8c47e02000036bb44">Permissions::READ_ONLY</a> to spawn the rx thread prior to the rx configuration being set from a separate thread.</p>
+<dl class="section pre"><dt>Precondition</dt><dd>None</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Rx thread has been configured </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0c2d0f76fff55a5d1a8f2c85e315b6bd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void snav_fci::FlightControlInterface::wait_on_action </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Wait for the currently-executing action to complete. </p>
+<p>Blocks until the currently-executing action completes. The result of the action can be obtained via <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ab4bea64f70862efdb62223e70ac1c441" title="Get the result of the most recently executed action. ">get_last_action_result()</a>.</p>
+<dl class="section pre"><dt>Precondition</dt><dd>None</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Currently-executing action is complete </dd></dl>
 
 </div>
 </div>
@@ -1004,7 +1759,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 17 2018 14:45:16 for Snapdragon Navigator Flight Control Interface by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 17 2018 13:20:04 for Qualcomm Navigator Flight Control Interface by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['launch',['LAUNCH',['../namespacesnav__fci.html#a5e47e6340086e7c66f46362d307e7b81a49c08d83927c163a001f9a8908c2fa03',1,'snav_fci']]]
+  ['min_5facc',['MIN_ACC',['../classsnav__fci_1_1_planner_config.html#ad7e91563c3b9aa543b1f91324b6afe96a61e7177c0d5b1c6b5624a8de35a08247',1,'snav_fci::PlannerConfig']]],
+  ['min_5fjerk',['MIN_JERK',['../classsnav__fci_1_1_planner_config.html#ad7e91563c3b9aa543b1f91324b6afe96ae8bc4d56b6124330f3bd390bd7cfd6a5',1,'snav_fci::PlannerConfig']]],
+  ['min_5fsnap',['MIN_SNAP',['../classsnav__fci_1_1_planner_config.html#ad7e91563c3b9aa543b1f91324b6afe96a0282ebfb834dd41d1d1c2973909b51ea',1,'snav_fci::PlannerConfig']]]
 ];

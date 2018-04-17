@@ -37,6 +37,8 @@
 
 #include <Eigen/Dense>
 
+#include "snav/state_vector.hpp"
+
 #include "api/displacement_derivs.hpp"
 
 namespace snav_fci
@@ -67,6 +69,23 @@ public:
   StateVector(Eigen::Vector3f position, float yaw) : StateVector(position)
   {
     this->yaw = yaw;
+  }
+
+  StateVector& operator= (const snav_traj_gen::StateVector& sv)
+  {
+    this->position[0] = sv.position[0];
+    this->position[1] = sv.position[1];
+    this->position[2] = sv.position[2];
+    this->velocity[0] = sv.velocity[0];
+    this->velocity[1] = sv.velocity[1];
+    this->velocity[2] = sv.velocity[2];
+    this->acceleration[0] = sv.acceleration[0];
+    this->acceleration[1] = sv.acceleration[1];
+    this->acceleration[2] = sv.acceleration[2];
+    this->jerk[0] = sv.jerk[0];
+    this->jerk[1] = sv.jerk[1];
+    this->jerk[2] = sv.jerk[2];
+    return *this;
   }
 
   float yaw;              /**< Yaw angle [rad] **/

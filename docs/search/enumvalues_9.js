@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['shortest_5fpath',['SHORTEST_PATH',['../classsnav__fci_1_1_planner_config.html#ad7e91563c3b9aa543b1f91324b6afe96a50a7316887f56d2d783d2bbbf813c108',1,'snav_fci::PlannerConfig']]],
-  ['snav_5fcached_5fdata_5ferror',['SNAV_CACHED_DATA_ERROR',['../classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feeceab88cac5c7171e6c45c39bc33f3f20063',1,'snav_fci::FlightControlInterface']]],
-  ['success',['SUCCESS',['../classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feecead0749aaba8b833466dfcbb0428e4f89c',1,'snav_fci::FlightControlInterface']]]
+  ['takeoff',['TAKEOFF',['../classsnav__fci_1_1_flight_control_interface.html#ac59374dda40d909e1789a970ee032ed1a8fabc74a4ed0781d663336cbf8c9c53d',1,'snav_fci::FlightControlInterface']]],
+  ['traj_5fnot_5ffeasible',['TRAJ_NOT_FEASIBLE',['../classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feecea210eada6c71cbf875bbd8e77b45aa830',1,'snav_fci::FlightControlInterface']]],
+  ['traj_5fnot_5foptimized',['TRAJ_NOT_OPTIMIZED',['../classsnav__fci_1_1_flight_control_interface.html#a8467d3a4b809d02d353dfa6c458feecea1d577991d33fbc42229bd9be38f5d651',1,'snav_fci::FlightControlInterface']]]
 ];

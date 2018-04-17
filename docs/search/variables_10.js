@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['waypoint_5fframe_5fparent',['waypoint_frame_parent',['../classsnav__fci_1_1_tx_config.html#aa52c50a575aad325b3c3cf1eb8d23d21',1,'snav_fci::TxConfig']]]
+  ['velocity',['velocity',['../classsnav__fci_1_1_displacement_derivs.html#a4ee4c058e01298a1c46fbdfc89a0e9d5',1,'snav_fci::DisplacementDerivs::velocity()'],['../classsnav__fci_1_1_trajectory_command.html#ab47378e0f66b13d0cd3bb3d465450a23',1,'snav_fci::TrajectoryCommand::velocity()']]]
 ];

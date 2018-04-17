@@ -35,13 +35,18 @@
 #ifndef SNAV_FCI_PLANNER_HPP_
 #define SNAV_FCI_PLANNER_HPP_
 
+#include <atomic>
 #include <cstdbool>
+#include <map>
+#include <mutex>
+#include <thread>
 
 #include "api/config/planner_config.hpp"
 #include "api/config/waypoint_config.hpp"
 #include "api/state_vector.hpp"
 #include "api/waypoint.hpp"
 #include "imp/inc/waypoint_convergence.hpp"
+#include "imp/inc/snav_trajectory_thread_safe.hpp"
 
 namespace snav_fci
 {
@@ -57,56 +62,126 @@ public:
     COMPLETE
   };
 
-  // Constructor
   Planner();
+
   Planner(PlannerConfig config);
 
-  // Destructor
   ~Planner();
 
   void reset();
 
-  // set config
-  void set_config(PlannerConfig conf);
-  // add a single waypoint
-  void add_waypoint(Waypoint wp);
-  // add a vector of waypoints
-  void add_waypoints(std::vector<Waypoint> wpv);
-  // get a pointer to the current active waypoint
-  Waypoint* get_active_waypoint();
-  // number of waypoints remaining (not completed)
-  int waypoints_remaining();
-  // current planner status
-  Status get_status();
+  int set_waypoints(const std::vector<Waypoint>& wpv);
+
+  int waypoints_remaining() const;
+
+  Status get_status() const;
+
+  std::vector<Waypoint> get_input_waypoints() const
+  {
+    std::lock_guard<std::mutex> lock(wp_mutex_);
+    return waypoints_;
+  }
+
+  std::vector<Waypoint> get_optimized_waypoints() const
+  {
+    std::vector<Waypoint> output;
+    std::vector<Waypoint> entrance = entrance_traj_.get_optimized_waypoints();
+    std::vector<Waypoint> main = main_traj_.get_optimized_waypoints();
+    output.insert(output.end(), entrance.begin(), entrance.end());
+    output.insert(output.end(), main.begin(), main.end());
+    return output;
+  }
+
+  int get_entrance_trajectory(snav_traj_gen::SnavTrajectory& traj) const
+  {
+    if (!entrance_traj_.optimized()) { return -1; }
+    if (!entrance_traj_.satisfies_constraints()) { return -2; }
+    traj = entrance_traj_.get_trajectory();
+    return 0;
+  }
+
+  int get_trajectory(snav_traj_gen::SnavTrajectory& traj) const
+  {
+    if (!main_traj_.optimized()) { return -1; }
+    if (!main_traj_.satisfies_constraints()) { return -2; }
+    traj = main_traj_.get_trajectory();
+    return 0;
+  }
+
+  int get_last_optimized_trajectory(snav_traj_gen::SnavTrajectory& traj) const
+  {
+    if (!main_traj_.optimized()) { return -1; }
+    traj = main_traj_.get_trajectory();
+    return 0;
+  }
+
+  int get_last_optimized_entrance_trajectory(snav_traj_gen::SnavTrajectory& traj) const
+  {
+    if (!entrance_traj_.optimized()) { return -1; }
+    traj = entrance_traj_.get_trajectory();
+    return 0;
+  }
 
   // get desired state/action at time t, given current state
   int get_desired_state(float t, const StateVector& current_state,
       StateVector& desired_state);
 
-private:
   // recalculate optimal trajectory
-  void calculate_path(StateVector state, float t);
-  // advance to next waypoint
-  void advance_waypoint();
-  // get time of previous waypoint
-  float last_waypoint_time();
+  int calculate_path(StateVector state);
+
+  static std::string get_status_string(Status status);
+
+  void set_config(const PlannerConfig& config)
+  {
+    std::lock_guard<std::mutex> lock(config_mutex_);
+    config_ = config;
+  }
+
+  PlannerConfig get_config() const
+  {
+    std::lock_guard<std::mutex> lock(config_mutex_);
+    return config_;
+  }
 
 private:
+
+  // Disallow copy and assign
+  Planner(const Planner&) = delete;
+  Planner& operator=(const Planner&) = delete;
+
+  void assign_waypoint_timestamps(std::vector<Waypoint>& wps);
+  bool verify_timestamps_monotonically_increase(const std::vector<Waypoint>& wps) const;
+  int safe_optimize(SnavTrajectoryThreadSafe& traj, bool loop);
+
+  Waypoint* get_active_waypoint();
+  void advance_waypoint();
+  float last_waypoint_time();
+  bool constraint_satisfied(float max_opt, float max_allowed, std::string field);
+
   const float kEpsilon_ = 1e-6;
   const float kMinDt_ = 1e-3;
   const float kMaxDt_ = 1e-1;
 
   std::vector<Waypoint> waypoints_;
+  std::vector<Waypoint> entrance_waypoints_;
+  mutable std::mutex wp_mutex_;
+
   PlannerConfig config_;
-  Status status_;
+  mutable std::mutex config_mutex_;
+
+  std::atomic<Status> status_;
   size_t active_waypoint_idx_;
-  bool path_ready_;
   WaypointConvergence wp_convergence_;
   bool initialized_;
   float mission_time_last_secs_;
+  float loop_time_start_;
+  unsigned int num_loops_;
+  float loop_duration_;
   StateVector state_command_world_;
   StateVector state_measured_last_;
   float yaw_desired_;
+  SnavTrajectoryThreadSafe main_traj_;
+  SnavTrajectoryThreadSafe entrance_traj_;
 };
 
 } // namespace snav_fci

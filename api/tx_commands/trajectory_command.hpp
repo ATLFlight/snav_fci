@@ -45,7 +45,7 @@ namespace snav_fci
 
 /**
  * @brief Structure containing the inputs to the
- * sn_send_trajectory_tracking_command() Snapdragon Navigator API function
+ * sn_send_trajectory_tracking_command() Qualcomm Navigator API function
  */
 class TrajectoryCommand : public TxCommand
 {

@@ -63,8 +63,7 @@ public:
   {
     max_linear_velocity_norm = 0.5;
     max_linear_acceleration_norm = 0.25;
-    max_yaw_velocity_norm = 1.0;
-    max_yaw_acceleration_norm = 0.5;
+    max_yaw_velocity_norm = M_PI;
     yaw_type = YawType::FORWARD;
   }
 
@@ -78,7 +77,6 @@ public:
     this->max_linear_velocity_norm = fabs(max_linear_velocity_norm);
     this->max_linear_acceleration_norm = fabs(max_linear_acceleration_norm);
     this->max_yaw_velocity_norm = fabs(max_angular_velocity_norm);
-    this->max_yaw_acceleration_norm = fabs(max_angular_acceleration_norm);
     this->yaw_type = yaw_type;
   }
 
@@ -100,11 +98,6 @@ public:
    * @brief Maximum allowed yaw velocity magnitude in rad/s
    */
   float max_yaw_velocity_norm;
-
-  /**
-   * @brief Maximum allowed yaw acceleration magnitude in rad/s/s
-   */
-  float max_yaw_acceleration_norm;
 
   /**
    * @brief Specifies how desired yaw is handled for this waypoint

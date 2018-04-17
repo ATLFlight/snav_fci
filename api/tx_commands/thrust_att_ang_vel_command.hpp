@@ -44,7 +44,7 @@ namespace snav_fci
 
 /**
  * @brief Structure containing the inputs to the
- * sn_send_thrust_att_ang_vel_command() Snapdragon Navigator API function
+ * sn_send_thrust_att_ang_vel_command() Qualcomm Navigator API function
  */
 class ThrustAttAngVelCommand : public TxCommand
 {

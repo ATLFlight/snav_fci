@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Snapdragon Navigator Flight Control Interface: api/config/waypoint_config.hpp Source File</title>
+<title>Qualcomm Navigator Flight Control Interface: api/config/waypoint_config.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Snapdragon Navigator Flight Control Interface
-   &#160;<span id="projectnumber">1.0</span>
+   <div id="projectname">Qualcomm Navigator Flight Control Interface
+   &#160;<span id="projectnumber">2.0</span>
    </div>
   </td>
  </tr>
@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -70,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -145,52 +146,47 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  {</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="classsnav__fci_1_1_waypoint_config.html#ae8f3ac62949837830e31ac4f652744c5">max_linear_velocity_norm</a> = 0.5;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="classsnav__fci_1_1_waypoint_config.html#af0dfa9009d14528df87cb6511208fa97">max_linear_acceleration_norm</a> = 0.25;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="classsnav__fci_1_1_waypoint_config.html#ad78424f1d9aa879361f853a4f256a2e8">max_yaw_velocity_norm</a> = 1.0;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="classsnav__fci_1_1_waypoint_config.html#aa8e2bef19470ea7b4e3d81bd23bd27dd">max_yaw_acceleration_norm</a> = 0.5;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="classsnav__fci_1_1_waypoint_config.html#acb9848eac1a0e8c2bacfa4765e581f2f">yaw_type</a> = <a class="code" href="classsnav__fci_1_1_waypoint_config.html#ae1333fbf6b0edf23cf4f383738601f3aabfec72bb37910c61f36b6c29a1f7ec31">YawType::FORWARD</a>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classsnav__fci_1_1_waypoint_config.html#ac05fc0aeb762713c5ad41dbf9d66c29b">   74</a></span>&#160;  <a class="code" href="classsnav__fci_1_1_waypoint_config.html#ac05fc0aeb762713c5ad41dbf9d66c29b">WaypointConfig</a>(<span class="keywordtype">float</span> <a class="code" href="classsnav__fci_1_1_waypoint_config.html#ae8f3ac62949837830e31ac4f652744c5">max_linear_velocity_norm</a>,</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <span class="keywordtype">float</span> <a class="code" href="classsnav__fci_1_1_waypoint_config.html#af0dfa9009d14528df87cb6511208fa97">max_linear_acceleration_norm</a>, <span class="keywordtype">float</span> max_angular_velocity_norm,</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <span class="keywordtype">float</span> max_angular_acceleration_norm, <a class="code" href="classsnav__fci_1_1_waypoint_config.html#ae1333fbf6b0edf23cf4f383738601f3a">YawType</a> <a class="code" href="classsnav__fci_1_1_waypoint_config.html#acb9848eac1a0e8c2bacfa4765e581f2f">yaw_type</a>)</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    this-&gt;max_linear_velocity_norm = fabs(max_linear_velocity_norm);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    this-&gt;max_linear_acceleration_norm = fabs(max_linear_acceleration_norm);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    this-&gt;<a class="code" href="classsnav__fci_1_1_waypoint_config.html#ad78424f1d9aa879361f853a4f256a2e8">max_yaw_velocity_norm</a> = fabs(max_angular_velocity_norm);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    this-&gt;<a class="code" href="classsnav__fci_1_1_waypoint_config.html#aa8e2bef19470ea7b4e3d81bd23bd27dd">max_yaw_acceleration_norm</a> = fabs(max_angular_acceleration_norm);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    this-&gt;yaw_type = <a class="code" href="classsnav__fci_1_1_waypoint_config.html#acb9848eac1a0e8c2bacfa4765e581f2f">yaw_type</a>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="classsnav__fci_1_1_waypoint_config.html#ae8f3ac62949837830e31ac4f652744c5">   90</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="classsnav__fci_1_1_waypoint_config.html#ae8f3ac62949837830e31ac4f652744c5">max_linear_velocity_norm</a>;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="classsnav__fci_1_1_waypoint_config.html#af0dfa9009d14528df87cb6511208fa97">   97</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="classsnav__fci_1_1_waypoint_config.html#af0dfa9009d14528df87cb6511208fa97">max_linear_acceleration_norm</a>;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="classsnav__fci_1_1_waypoint_config.html#ad78424f1d9aa879361f853a4f256a2e8">  102</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="classsnav__fci_1_1_waypoint_config.html#ad78424f1d9aa879361f853a4f256a2e8">max_yaw_velocity_norm</a>;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="classsnav__fci_1_1_waypoint_config.html#aa8e2bef19470ea7b4e3d81bd23bd27dd">  107</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="classsnav__fci_1_1_waypoint_config.html#aa8e2bef19470ea7b4e3d81bd23bd27dd">max_yaw_acceleration_norm</a>;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="classsnav__fci_1_1_waypoint_config.html#acb9848eac1a0e8c2bacfa4765e581f2f">  112</a></span>&#160;  <a class="code" href="classsnav__fci_1_1_waypoint_config.html#ae1333fbf6b0edf23cf4f383738601f3a">YawType</a> <a class="code" href="classsnav__fci_1_1_waypoint_config.html#acb9848eac1a0e8c2bacfa4765e581f2f">yaw_type</a>;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;};</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;} <span class="comment">// namespace snav_fci</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#endif // SNAV_FCI_WAYPOINT_CONFIG_HPP_</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="classsnav__fci_1_1_waypoint_config.html#ad78424f1d9aa879361f853a4f256a2e8">max_yaw_velocity_norm</a> = M_PI;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="classsnav__fci_1_1_waypoint_config.html#acb9848eac1a0e8c2bacfa4765e581f2f">yaw_type</a> = <a class="code" href="classsnav__fci_1_1_waypoint_config.html#ae1333fbf6b0edf23cf4f383738601f3aabfec72bb37910c61f36b6c29a1f7ec31">YawType::FORWARD</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classsnav__fci_1_1_waypoint_config.html#ac05fc0aeb762713c5ad41dbf9d66c29b">   73</a></span>&#160;  <a class="code" href="classsnav__fci_1_1_waypoint_config.html#ac05fc0aeb762713c5ad41dbf9d66c29b">WaypointConfig</a>(<span class="keywordtype">float</span> <a class="code" href="classsnav__fci_1_1_waypoint_config.html#ae8f3ac62949837830e31ac4f652744c5">max_linear_velocity_norm</a>,</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      <span class="keywordtype">float</span> <a class="code" href="classsnav__fci_1_1_waypoint_config.html#af0dfa9009d14528df87cb6511208fa97">max_linear_acceleration_norm</a>, <span class="keywordtype">float</span> max_angular_velocity_norm,</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <span class="keywordtype">float</span> max_angular_acceleration_norm, <a class="code" href="classsnav__fci_1_1_waypoint_config.html#ae1333fbf6b0edf23cf4f383738601f3a">YawType</a> <a class="code" href="classsnav__fci_1_1_waypoint_config.html#acb9848eac1a0e8c2bacfa4765e581f2f">yaw_type</a>)</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    this-&gt;max_linear_velocity_norm = fabs(max_linear_velocity_norm);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    this-&gt;max_linear_acceleration_norm = fabs(max_linear_acceleration_norm);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    this-&gt;<a class="code" href="classsnav__fci_1_1_waypoint_config.html#ad78424f1d9aa879361f853a4f256a2e8">max_yaw_velocity_norm</a> = fabs(max_angular_velocity_norm);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    this-&gt;yaw_type = <a class="code" href="classsnav__fci_1_1_waypoint_config.html#acb9848eac1a0e8c2bacfa4765e581f2f">yaw_type</a>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="classsnav__fci_1_1_waypoint_config.html#ae8f3ac62949837830e31ac4f652744c5">   88</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="classsnav__fci_1_1_waypoint_config.html#ae8f3ac62949837830e31ac4f652744c5">max_linear_velocity_norm</a>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classsnav__fci_1_1_waypoint_config.html#af0dfa9009d14528df87cb6511208fa97">   95</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="classsnav__fci_1_1_waypoint_config.html#af0dfa9009d14528df87cb6511208fa97">max_linear_acceleration_norm</a>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="classsnav__fci_1_1_waypoint_config.html#ad78424f1d9aa879361f853a4f256a2e8">  100</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="classsnav__fci_1_1_waypoint_config.html#ad78424f1d9aa879361f853a4f256a2e8">max_yaw_velocity_norm</a>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="classsnav__fci_1_1_waypoint_config.html#acb9848eac1a0e8c2bacfa4765e581f2f">  105</a></span>&#160;  <a class="code" href="classsnav__fci_1_1_waypoint_config.html#ae1333fbf6b0edf23cf4f383738601f3a">YawType</a> <a class="code" href="classsnav__fci_1_1_waypoint_config.html#acb9848eac1a0e8c2bacfa4765e581f2f">yaw_type</a>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;};</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;} <span class="comment">// namespace snav_fci</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#endif // SNAV_FCI_WAYPOINT_CONFIG_HPP_</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="classsnav__fci_1_1_waypoint_config_html_ae1333fbf6b0edf23cf4f383738601f3aa84fb4bfe2188c39fc1714bb1ddff27c9"><div class="ttname"><a href="classsnav__fci_1_1_waypoint_config.html#ae1333fbf6b0edf23cf4f383738601f3aa84fb4bfe2188c39fc1714bb1ddff27c9">snav_fci::WaypointConfig::YawType::WAYPOINT</a></div></div>
 <div class="ttc" id="classsnav__fci_1_1_waypoint_config_html"><div class="ttname"><a href="classsnav__fci_1_1_waypoint_config.html">snav_fci::WaypointConfig</a></div><div class="ttdoc">Structure containing waypoint options. </div><div class="ttdef"><b>Definition:</b> waypoint_config.hpp:46</div></div>
-<div class="ttc" id="classsnav__fci_1_1_waypoint_config_html_aa8e2bef19470ea7b4e3d81bd23bd27dd"><div class="ttname"><a href="classsnav__fci_1_1_waypoint_config.html#aa8e2bef19470ea7b4e3d81bd23bd27dd">snav_fci::WaypointConfig::max_yaw_acceleration_norm</a></div><div class="ttdeci">float max_yaw_acceleration_norm</div><div class="ttdoc">Maximum allowed yaw acceleration magnitude in rad/s/s. </div><div class="ttdef"><b>Definition:</b> waypoint_config.hpp:107</div></div>
-<div class="ttc" id="classsnav__fci_1_1_waypoint_config_html_acb9848eac1a0e8c2bacfa4765e581f2f"><div class="ttname"><a href="classsnav__fci_1_1_waypoint_config.html#acb9848eac1a0e8c2bacfa4765e581f2f">snav_fci::WaypointConfig::yaw_type</a></div><div class="ttdeci">YawType yaw_type</div><div class="ttdoc">Specifies how desired yaw is handled for this waypoint. </div><div class="ttdef"><b>Definition:</b> waypoint_config.hpp:112</div></div>
-<div class="ttc" id="classsnav__fci_1_1_waypoint_config_html_af0dfa9009d14528df87cb6511208fa97"><div class="ttname"><a href="classsnav__fci_1_1_waypoint_config.html#af0dfa9009d14528df87cb6511208fa97">snav_fci::WaypointConfig::max_linear_acceleration_norm</a></div><div class="ttdeci">float max_linear_acceleration_norm</div><div class="ttdoc">Maximum allowed linear acceleration magnitude in m/s/s. </div><div class="ttdef"><b>Definition:</b> waypoint_config.hpp:97</div></div>
-<div class="ttc" id="classsnav__fci_1_1_waypoint_config_html_ad78424f1d9aa879361f853a4f256a2e8"><div class="ttname"><a href="classsnav__fci_1_1_waypoint_config.html#ad78424f1d9aa879361f853a4f256a2e8">snav_fci::WaypointConfig::max_yaw_velocity_norm</a></div><div class="ttdeci">float max_yaw_velocity_norm</div><div class="ttdoc">Maximum allowed yaw velocity magnitude in rad/s. </div><div class="ttdef"><b>Definition:</b> waypoint_config.hpp:102</div></div>
-<div class="ttc" id="classsnav__fci_1_1_waypoint_config_html_ae8f3ac62949837830e31ac4f652744c5"><div class="ttname"><a href="classsnav__fci_1_1_waypoint_config.html#ae8f3ac62949837830e31ac4f652744c5">snav_fci::WaypointConfig::max_linear_velocity_norm</a></div><div class="ttdeci">float max_linear_velocity_norm</div><div class="ttdoc">Maximum allowed linear velocity magnitude in m/s. </div><div class="ttdef"><b>Definition:</b> waypoint_config.hpp:90</div></div>
+<div class="ttc" id="classsnav__fci_1_1_waypoint_config_html_acb9848eac1a0e8c2bacfa4765e581f2f"><div class="ttname"><a href="classsnav__fci_1_1_waypoint_config.html#acb9848eac1a0e8c2bacfa4765e581f2f">snav_fci::WaypointConfig::yaw_type</a></div><div class="ttdeci">YawType yaw_type</div><div class="ttdoc">Specifies how desired yaw is handled for this waypoint. </div><div class="ttdef"><b>Definition:</b> waypoint_config.hpp:105</div></div>
+<div class="ttc" id="classsnav__fci_1_1_waypoint_config_html_af0dfa9009d14528df87cb6511208fa97"><div class="ttname"><a href="classsnav__fci_1_1_waypoint_config.html#af0dfa9009d14528df87cb6511208fa97">snav_fci::WaypointConfig::max_linear_acceleration_norm</a></div><div class="ttdeci">float max_linear_acceleration_norm</div><div class="ttdoc">Maximum allowed linear acceleration magnitude in m/s/s. </div><div class="ttdef"><b>Definition:</b> waypoint_config.hpp:95</div></div>
+<div class="ttc" id="classsnav__fci_1_1_waypoint_config_html_ad78424f1d9aa879361f853a4f256a2e8"><div class="ttname"><a href="classsnav__fci_1_1_waypoint_config.html#ad78424f1d9aa879361f853a4f256a2e8">snav_fci::WaypointConfig::max_yaw_velocity_norm</a></div><div class="ttdeci">float max_yaw_velocity_norm</div><div class="ttdoc">Maximum allowed yaw velocity magnitude in rad/s. </div><div class="ttdef"><b>Definition:</b> waypoint_config.hpp:100</div></div>
+<div class="ttc" id="classsnav__fci_1_1_waypoint_config_html_ae8f3ac62949837830e31ac4f652744c5"><div class="ttname"><a href="classsnav__fci_1_1_waypoint_config.html#ae8f3ac62949837830e31ac4f652744c5">snav_fci::WaypointConfig::max_linear_velocity_norm</a></div><div class="ttdeci">float max_linear_velocity_norm</div><div class="ttdoc">Maximum allowed linear velocity magnitude in m/s. </div><div class="ttdef"><b>Definition:</b> waypoint_config.hpp:88</div></div>
 <div class="ttc" id="classsnav__fci_1_1_waypoint_config_html_ae1333fbf6b0edf23cf4f383738601f3a"><div class="ttname"><a href="classsnav__fci_1_1_waypoint_config.html#ae1333fbf6b0edf23cf4f383738601f3a">snav_fci::WaypointConfig::YawType</a></div><div class="ttdeci">YawType</div><div class="ttdoc">Enum used to handle different ways of handling yaw tracking. </div><div class="ttdef"><b>Definition:</b> waypoint_config.hpp:53</div></div>
 <div class="ttc" id="classsnav__fci_1_1_waypoint_config_html_ae1333fbf6b0edf23cf4f383738601f3aabfec72bb37910c61f36b6c29a1f7ec31"><div class="ttname"><a href="classsnav__fci_1_1_waypoint_config.html#ae1333fbf6b0edf23cf4f383738601f3aabfec72bb37910c61f36b6c29a1f7ec31">snav_fci::WaypointConfig::YawType::FORWARD</a></div></div>
-<div class="ttc" id="classsnav__fci_1_1_waypoint_config_html_ac05fc0aeb762713c5ad41dbf9d66c29b"><div class="ttname"><a href="classsnav__fci_1_1_waypoint_config.html#ac05fc0aeb762713c5ad41dbf9d66c29b">snav_fci::WaypointConfig::WaypointConfig</a></div><div class="ttdeci">WaypointConfig(float max_linear_velocity_norm, float max_linear_acceleration_norm, float max_angular_velocity_norm, float max_angular_acceleration_norm, YawType yaw_type)</div><div class="ttdef"><b>Definition:</b> waypoint_config.hpp:74</div></div>
+<div class="ttc" id="classsnav__fci_1_1_waypoint_config_html_ac05fc0aeb762713c5ad41dbf9d66c29b"><div class="ttname"><a href="classsnav__fci_1_1_waypoint_config.html#ac05fc0aeb762713c5ad41dbf9d66c29b">snav_fci::WaypointConfig::WaypointConfig</a></div><div class="ttdeci">WaypointConfig(float max_linear_velocity_norm, float max_linear_acceleration_norm, float max_angular_velocity_norm, float max_angular_acceleration_norm, YawType yaw_type)</div><div class="ttdef"><b>Definition:</b> waypoint_config.hpp:73</div></div>
 <div class="ttc" id="classsnav__fci_1_1_waypoint_config_html_abcca6824a8953b39e00526e62ac55d13"><div class="ttname"><a href="classsnav__fci_1_1_waypoint_config.html#abcca6824a8953b39e00526e62ac55d13">snav_fci::WaypointConfig::WaypointConfig</a></div><div class="ttdeci">WaypointConfig()</div><div class="ttdoc">Default constructor. </div><div class="ttdef"><b>Definition:</b> waypoint_config.hpp:62</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 17 2018 14:45:16 for Snapdragon Navigator Flight Control Interface by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 17 2018 13:20:04 for Qualcomm Navigator Flight Control Interface by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

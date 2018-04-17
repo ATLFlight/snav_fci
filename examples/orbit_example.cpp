@@ -64,21 +64,16 @@ int main(int argc, char* argv[])
 {
   using FCI = snav_fci::FlightControlInterface;
 
-  FCI fci;
-  if (fci.initialize(FCI::Permissions::READ_WRITE) != FCI::Return::SUCCESS)
-  {
-    std::cout << "Error initializing FlightControlInterface for READ_WRITE" << std::endl;
-    return -1;
-  }
+  FCI fci(FCI::Permissions::READ_WRITE);
 
   // Configure FlightControlInterface to send commands at 200 Hz relative
   // to the LAUNCH frame
   snav_fci::TxConfig tx_config;
   tx_config.tx_rate = 200;
   tx_config.waypoint_frame_parent = snav_fci::ReferenceFrame::LAUNCH;
-  if (fci.configure_tx(tx_config) != FCI::Return::SUCCESS) return -2;
+  fci.configure_tx(tx_config);
 
-  if (fci.connect() != FCI::Return::SUCCESS) return -3;
+  fci.connect();
 
   /**
    * Parameters used to define the orbit maneuver:
@@ -106,7 +101,7 @@ int main(int argc, char* argv[])
    *
    * Phases 1, 2, 4, and 5 use high-level functions of FlightControlInterface.
    * Phase 3 directly computes velocity and yaw rate commands and sends the
-   * result to FlightControlInterface to be sent to Snapdragon Navigator.
+   * result to FlightControlInterface to be sent to Qualcomm Navigator.
    */
 
   // Phase 1
@@ -121,8 +116,7 @@ int main(int argc, char* argv[])
   signal(SIGINT, signal_handler);
   while (FCI::ok())
   {
-    SnavCachedData snav_data;
-    fci.get_snav_cached_data(snav_data);
+    SnavCachedData snav_data = fci.get_snav_cached_data();
 
     // t_ld_xy is a 2D vector from LAUNCH frame to DESIRED frame in XY
     std::array<float, 2> t_ld_xy =
@@ -205,11 +199,11 @@ int main(int argc, char* argv[])
 
     // Convert velocity and yaw_rate commands into RcCommand
     snav_fci::RcCommand rc_command;
-    FCI::convert_velocity_to_rc_command(velocity,
+    fci.convert_velocity_to_rc_command(velocity,
         yaw_rate, rc_command);
 
     // Update command being sent by FlightControlInterface
-    if (fci.set_tx_command(rc_command) != FCI::Return::SUCCESS) return -4;
+    fci.set_tx_command(rc_command);
 
     const unsigned int kSleepTimeUs = static_cast<unsigned int>(kDt * 1e6);
     usleep(kSleepTimeUs);

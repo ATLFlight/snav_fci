@@ -43,7 +43,7 @@ namespace snav_fci
 {
 
 /**
- * @brief Structure containing the inputs to the sn_send_esc_rpm() Snapdragon
+ * @brief Structure containing the inputs to the sn_send_esc_rpm() Qualcomm
  * Navigator API function
  */
 class RpmCommand : public TxCommand

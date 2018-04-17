@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['flightcontrolinterface',['FlightControlInterface',['../classsnav__fci_1_1_flight_control_interface.html#a6c417a9254c3faa42cbdd6c5d06fa7f1',1,'snav_fci::FlightControlInterface']]],
-  ['frame_5fupdate_5ftask',['frame_update_task',['../multithreaded__waypoint__example_8cpp.html#a2c7527e5fb6a8bc4c697f2a8ab6e3746',1,'multithreaded_waypoint_example.cpp']]]
+  ['execute_5fmission',['execute_mission',['../classsnav__fci_1_1_flight_control_interface.html#a7b4cade23ff78807c5f68c0eabc09e0d',1,'snav_fci::FlightControlInterface']]],
+  ['execute_5fmission_5fnb',['execute_mission_nb',['../classsnav__fci_1_1_flight_control_interface.html#a14b2225c9580c76ad0c0216c1bd6fe33',1,'snav_fci::FlightControlInterface']]]
 ];

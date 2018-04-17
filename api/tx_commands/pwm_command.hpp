@@ -43,7 +43,7 @@ namespace snav_fci
 {
 
 /**
- * @brief Structure containing the inputs to the sn_send_esc_pwm() Snapdragon
+ * @brief Structure containing the inputs to the sn_send_esc_pwm() Qualcomm
  * Navigator API function
  */
 class PwmCommand : public TxCommand

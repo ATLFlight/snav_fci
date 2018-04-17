@@ -37,6 +37,8 @@
 
 #include <Eigen/Dense>
 
+#include "snav/waypoint.hpp"
+
 #include "api/config/waypoint_config.hpp"
 #include "api/state_vector.hpp"
 
@@ -97,7 +99,19 @@ public:
    */
   Waypoint(StateVector state, WaypointConfig conf);
 
+  Waypoint(const snav_traj_gen::Waypoint& waypoint);
+
   void set_deriv_constraints(int mask);
+
+  /**
+   * @brief Set all constraints to be fixed
+   */
+  void fix_all();
+
+  /**
+   * @brief Set all constraints to be free
+   */
+  void fix_none();
 
   /**
    * @brief Set the waypoint configuration
@@ -132,7 +146,13 @@ public:
                                          the derivative is fixed **/
   Status status;
 
+  float time; /**< Waypoint time in s relative to start of trajectory */
+
   friend std::ostream& operator<<(std::ostream &strm, const Waypoint &wp);
+
+  snav_traj_gen::Waypoint get_traj_gen_waypoint() const;
+
+  static std::string get_status_string(const Status& status);
 
 private:
   WaypointConfig config_;

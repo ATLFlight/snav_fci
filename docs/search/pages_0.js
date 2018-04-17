@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['snapdragon_20navigator_20flight_20control_20interface',['Snapdragon Navigator Flight Control Interface',['../index.html',1,'']]]
+  ['change_20log',['Change Log',['../md__c_h_a_n_g_e_l_o_g.html',1,'']]]
 ];

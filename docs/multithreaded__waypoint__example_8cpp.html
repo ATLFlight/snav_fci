@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Snapdragon Navigator Flight Control Interface: examples/multithreaded_waypoint_example.cpp File Reference</title>
+<title>Qualcomm Navigator Flight Control Interface: examples/multithreaded_waypoint_example.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Snapdragon Navigator Flight Control Interface
-   &#160;<span id="projectnumber">1.0</span>
+   <div id="projectname">Qualcomm Navigator Flight Control Interface
+   &#160;<span id="projectnumber">2.0</span>
    </div>
   </td>
  </tr>
@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -70,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -161,14 +162,14 @@ std::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><b>gMissionI
 </div><div class="memdoc">
 
 <p>This is an example of a multithreaded waypoint-following mission. </p>
-<p>It also does a better job of checking return codes provided by <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Snapdragon Navigator Flight Controller. ">snav_fci::FlightControlInterface</a> than <a class="el" href="basic__waypoint__example_8cpp.html">basic_waypoint_example.cpp</a>.</p>
+<p>It also does a better job of checking return codes provided by <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Qualcomm Navigator Flight Controller. ">snav_fci::FlightControlInterface</a> than <a class="el" href="basic__waypoint__example_8cpp.html">basic_waypoint_example.cpp</a>.</p>
 <p>This example uses three threads:</p>
 <ol type="1">
 <li><code>mission_thread</code>: commands the vehicle to go to waypoints</li>
 <li><code>frame_update_thread</code>: updates the transform between ReferenceFrame::WAYPOINT and its parent such that the mission is relative to the launch position and orientation; note that this is just intended to serve as an example of using the <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#aa0e08acadc567958e104fd30875ba76e" title="Updates the transform between ReferenceFrame::WAYPOINT and its parent. ">snav_fci::FlightControlInterface::set_waypoint_frame_tf()</a> function and would normally by achieved by simply using <a class="el" href="classsnav__fci_1_1_tx_config.html#aa52c50a575aad325b3c3cf1eb8d23d21">snav_fci::TxConfig::waypoint_frame_parent</a></li>
-<li><code>telemetry_thread</code>: retrieves data from Snapdragon Navigator and prints it to <code>stdout</code></li>
+<li><code>telemetry_thread</code>: retrieves data from Qualcomm Navigator and prints it to <code>stdout</code></li>
 </ol>
-<p>A similar multithreaded architecture may be suitable for a host of other use cases and is more easily achieved using <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Snapdragon Navigator Flight Controller. ">snav_fci::FlightControlInterface</a> compared to using the Snapdragon Navigator API directly. </p>
+<p>A similar multithreaded architecture may be suitable for a host of other use cases and is more easily achieved using <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Qualcomm Navigator Flight Controller. ">snav_fci::FlightControlInterface</a> compared to using the Qualcomm Navigator API directly. </p>
 
 </div>
 </div>
@@ -187,7 +188,7 @@ std::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><b>gMissionI
 
 <p>Task to command the vehicle to execute a waypoint mission. </p>
 <p>This thread blocks while the vehicle executes the commanded maneuvers. </p>
-<p>Configure <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Snapdragon Navigator Flight Controller. ">snav_fci::FlightControlInterface</a> in this thread since this object has <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac00c18e2a3e63bfb759532ab9e17d1a1aa7b843fb734e3b3fea8e5f902d3f4144">snav_fci::FlightControlInterface::Permissions::READ_WRITE</a> and will launch both the tx and rx threads if not already launched. Other threads will wait for this to happen before calling <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a2089a5dc2e00d16b84dafb05cb4aee9e" title="Establish connection to Snapdragon Navigator. ">snav_fci::FlightControlInterface::connect()</a> using the <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a6888c4dbf0aa06dade7b59ff632fa929" title="Block until FlightControlInterface has been configured. ">snav_fci::FlightControlInterface::wait_for_configure()</a> function.</p>
+<p>Configure <a class="el" href="classsnav__fci_1_1_flight_control_interface.html" title="Interface to the Qualcomm Navigator Flight Controller. ">snav_fci::FlightControlInterface</a> in this thread since this object has <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#ac00c18e2a3e63bfb759532ab9e17d1a1aa7b843fb734e3b3fea8e5f902d3f4144">snav_fci::FlightControlInterface::Permissions::READ_WRITE</a> and will launch both the tx and rx threads if not already launched. Other threads will wait for this to happen before calling <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a2089a5dc2e00d16b84dafb05cb4aee9e" title="Establish connection to Qualcomm Navigator. ">snav_fci::FlightControlInterface::connect()</a> using the <a class="el" href="classsnav__fci_1_1_flight_control_interface.html#a23e8c02bb45d4f96ed892587dc7a8cbd" title="Block until FlightControlInterface has been configured. ">snav_fci::FlightControlInterface::wait_for_configure()</a> function.</p>
 <p>Take advantage of <a class="el" href="structsnav__fci_1_1_takeoff_config.html" title="Structure containing options for takeoff. ">snav_fci::TakeoffConfig</a> to configure the takeoff. Set take off height to 2 m, min takeoff speed to 0.05 m/s, max takeoff speed to 1 m/s, and max linear acceleration magnitude to 0.25 m/s^2.</p>
 <p>Define the waypoints for this mission, keeping in mind that the vehicle is at (0, 0, 2) m after takeoff phase ends:</p>
 <ol type="1">
@@ -221,7 +222,7 @@ std::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><b>gMissionI
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 17 2018 14:45:16 for Snapdragon Navigator Flight Control Interface by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 17 2018 13:20:04 for Qualcomm Navigator Flight Control Interface by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -39,7 +39,15 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
-set(CMAKE_CXX_FLAGS "-std=gnu++11 -Wall -O3 ${CMAKE_CXX_FLAGS}")
+set(CMAKE_CXX_FLAGS_DEBUG "-std=gnu++11 -Werror -Wall -pedantic ${CMAKE_CXX_FLAGS_DEBUG}")
+set(CMAKE_CXX_FLAGS_RELEASE "-std=gnu++11 -Werror -Wall -pedantic ${CMAKE_CXX_FLAGS_RELEASE}")
+
+set(default_build_type "Release")
+if (NOT CMAKE_BUILD_TYPE)
+  set(CMAKE_BUILD_TYPE "${default_build_type}")
+endif()
+
+message("build type: ${CMAKE_BUILD_TYPE}")
 
 include_directories(${CMAKE_SOURCE_DIR}
   /usr/include/eigen3
@@ -50,7 +58,7 @@ add_library(snav_fci SHARED imp/src/flight_control_interface.cpp
   imp/src/waypoint.cpp
 )
 
-target_link_libraries(snav_fci snav_arm)
+target_link_libraries(snav_fci snav_arm snav_traj_gen)
 
 add_executable(hello_snav examples/hello_snav.cpp)
 target_link_libraries(hello_snav snav_fci)
@@ -63,4 +71,7 @@ target_link_libraries(multithreaded_waypoint_example snav_fci)
 
 add_executable(orbit_example examples/orbit_example.cpp)
 target_link_libraries(orbit_example snav_fci)
+
+add_executable(nonblocking_trajectory_example examples/nonblocking_trajectory_example.cpp)
+target_link_libraries(nonblocking_trajectory_example snav_fci)
 

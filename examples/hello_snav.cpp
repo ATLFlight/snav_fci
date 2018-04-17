@@ -39,7 +39,7 @@
 #include "api/flight_control_interface.hpp"
 
 /**
- * This example demonstrates how to create a connection to Snapdragon
+ * This example demonstrates how to create a connection to Qualcomm
  * Navigator for sending commands and receiving data using
  * FlightControlInterface.
  */
@@ -49,15 +49,9 @@ int main(int argc, char* argv[])
   // create an alias like this.
   using FCI = snav_fci::FlightControlInterface;
 
-  FCI fci;
-  if (fci.initialize(FCI::Permissions::READ_WRITE) != FCI::Return::SUCCESS)
-  {
-    return -1;
-  }
-
-  if (fci.connect() != FCI::Return::SUCCESS) return -2;
-
-  std::cout << "Successfully connected to Snapdragon Navigator" << std::endl;
+  FCI fci(FCI::Permissions::READ_WRITE);
+  fci.connect();
+  std::cout << "Successfully connected to Qualcomm Navigator" << std::endl;
 
   return 0;
 }

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['strict_5fpos_5fest_5ftype_5fchecking',['strict_pos_est_type_checking',['../classsnav__fci_1_1_tx_config.html#a1d41f7986db768b1aaea3b1268b7ac38',1,'snav_fci::TxConfig']]]
+  ['rpms',['rpms',['../classsnav__fci_1_1_rpm_command.html#a1864a489d6ed14605046721e9612340a',1,'snav_fci::RpmCommand']]],
+  ['rx_5frate',['rx_rate',['../classsnav__fci_1_1_rx_config.html#a0186a46e62bf3c255d5337a977478295',1,'snav_fci::RxConfig']]]
 ];

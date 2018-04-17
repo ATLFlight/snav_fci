@@ -1,5 +1,7 @@
 var searchData=
 [
   ['acceleration',['acceleration',['../classsnav__fci_1_1_displacement_derivs.html#a5b4b37df43f0d2a83b398082765f9d66',1,'snav_fci::DisplacementDerivs::acceleration()'],['../classsnav__fci_1_1_trajectory_command.html#a75182bb6c4f354f0530439af16b0f030',1,'snav_fci::TrajectoryCommand::acceleration()']]],
-  ['angular_5fvelocity',['angular_velocity',['../classsnav__fci_1_1_thrust_att_ang_vel_command.html#a4c9abed61c9b6546b27de0aed61d91a1',1,'snav_fci::ThrustAttAngVelCommand']]]
+  ['angular_5fvelocity',['angular_velocity',['../classsnav__fci_1_1_thrust_att_ang_vel_command.html#a4c9abed61c9b6546b27de0aed61d91a1',1,'snav_fci::ThrustAttAngVelCommand']]],
+  ['average_5fspeed_5fxy',['average_speed_xy',['../classsnav__fci_1_1_planner_config.html#a9e6d2f549cd1cf2053be78de665df2f7',1,'snav_fci::PlannerConfig']]],
+  ['average_5fspeed_5fz',['average_speed_z',['../classsnav__fci_1_1_planner_config.html#af3d68b57909932b5d8b1ba6a5ea92f07',1,'snav_fci::PlannerConfig']]]
 ];

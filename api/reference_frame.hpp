@@ -43,8 +43,8 @@ namespace snav_fci
  */
 enum class ReferenceFrame
 {
-  ESTIMATION, /**< Snapdragon Navigator's estimation frame **/
-  LAUNCH,     /**< Snapdragon Navigator's launch frame, defined as the
+  ESTIMATION, /**< Qualcomm Navigator's estimation frame **/
+  LAUNCH,     /**< Qualcomm Navigator's launch frame, defined as the
                 position and yaw of the vehicle with respect to the estimation
                 frame when the propellers start spinning **/
   WAYPOINT,   /**< Frame used by FlightControlInterface for planning **/

@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['main',['main',['../basic__waypoint__example_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;basic_waypoint_example.cpp'],['../hello__snav_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;hello_snav.cpp'],['../multithreaded__waypoint__example_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;multithreaded_waypoint_example.cpp'],['../orbit__example_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;orbit_example.cpp']]],
-  ['mission_5ftask',['mission_task',['../multithreaded__waypoint__example_8cpp.html#a232a632dea9eeb2c2a65d3fa0385b468',1,'multithreaded_waypoint_example.cpp']]]
+  ['land',['land',['../classsnav__fci_1_1_flight_control_interface.html#acc652d269c61d8351a2722453019c290',1,'snav_fci::FlightControlInterface::land(const LandingConfig &amp;landing_config)'],['../classsnav__fci_1_1_flight_control_interface.html#a6e5098c20c65cb1cda1b8df7f14b7d01',1,'snav_fci::FlightControlInterface::land()']]],
+  ['land_5fnb',['land_nb',['../classsnav__fci_1_1_flight_control_interface.html#aac04116339ecd72292a435c495051086',1,'snav_fci::FlightControlInterface::land_nb(const LandingConfig &amp;landing_config)'],['../classsnav__fci_1_1_flight_control_interface.html#aaba734fa3ea18d718763298887c1dc4d',1,'snav_fci::FlightControlInterface::land_nb()']]],
+  ['landingconfig',['LandingConfig',['../structsnav__fci_1_1_landing_config.html#a9015d21f0f05519bf2775c96f54a59c5',1,'snav_fci::LandingConfig::LandingConfig()'],['../structsnav__fci_1_1_landing_config.html#a0b692d7bce679a668b4f131261e7eb12',1,'snav_fci::LandingConfig::LandingConfig(float max_landing_speed)']]]
 ];

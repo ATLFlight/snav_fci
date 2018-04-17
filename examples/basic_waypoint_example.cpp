@@ -49,24 +49,19 @@ int main(int argc, char* argv[])
 {
   using FCI = snav_fci::FlightControlInterface;
 
-  FCI fci;
-  if (fci.initialize(FCI::Permissions::READ_WRITE) != FCI::Return::SUCCESS)
-  {
-    std::cout << "Error initializing FlightControlInterface for READ_WRITE" << std::endl;
-    return -1;
-  }
+  FCI fci(FCI::Permissions::READ_WRITE);
 
   /**
    * Make the mission relative to the vehicle's position and orientation when
    * the propellers start spinning. Without these lines, the mission is
-   * relative to the vehicle's position and orientation when Snapdragon
+   * relative to the vehicle's position and orientation when Qualcomm
    * Navigator first initializes.
    */
   snav_fci::TxConfig tx_config;
   tx_config.waypoint_frame_parent = snav_fci::ReferenceFrame::LAUNCH;
   fci.configure_tx(tx_config);
 
-  if (fci.connect() != FCI::Return::SUCCESS) return -2;
+  fci.connect();
 
   fci.takeoff();
   fci.go_to_waypoint(snav_fci::Waypoint(Eigen::Vector3f(2, 0, 2)));

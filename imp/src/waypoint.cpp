@@ -34,13 +34,16 @@
 
 #include "api/waypoint.hpp"
 
+#include <cmath>
+
 namespace snav_fci
 {
 
 Waypoint::Waypoint()
 {
+  constrained.setConstant(false);
   status = Status::INACTIVE;
-  constrained.setConstant(true);
+  time = NAN;
   set_deriv_constraints(FIX_POS);
   configured_ = false;
 }
@@ -72,6 +75,27 @@ Waypoint::Waypoint(StateVector state, WaypointConfig conf): Waypoint(state)
   set_config(conf);
 }
 
+Waypoint::Waypoint(const snav_traj_gen::Waypoint& waypoint) : Waypoint()
+{
+  position[0] = waypoint.position[0];
+  position[1] = waypoint.position[1];
+  position[2] = waypoint.position[2];
+  velocity[0] = waypoint.velocity[0];
+  velocity[1] = waypoint.velocity[1];
+  velocity[2] = waypoint.velocity[2];
+  acceleration[0] = waypoint.acceleration[0];
+  acceleration[1] = waypoint.acceleration[1];
+  acceleration[2] = waypoint.acceleration[2];
+  jerk[0] = waypoint.jerk[0];
+  jerk[1] = waypoint.jerk[1];
+  jerk[2] = waypoint.jerk[2];
+  time = waypoint.time;
+  constrained[0] = waypoint.constrained[0];
+  constrained[1] = waypoint.constrained[1];
+  constrained[2] = waypoint.constrained[2];
+  constrained[3] = waypoint.constrained[3];
+}
+
 void Waypoint::set_config(WaypointConfig conf)
 {
   config_ = conf;
@@ -101,11 +125,73 @@ void Waypoint::set_deriv_constraints(int mask)
     constrained[3] = false;
 }
 
+void Waypoint::fix_all()
+{
+  set_deriv_constraints(Waypoint::FIX_POS | Waypoint::FIX_VEL | Waypoint::FIX_ACC | Waypoint::FIX_JERK);
+}
+
+void Waypoint::fix_none()
+{
+  set_deriv_constraints(!(Waypoint::FIX_POS | Waypoint::FIX_VEL | Waypoint::FIX_ACC | Waypoint::FIX_JERK));
+}
+
 std::ostream& operator<<(std::ostream &strm, const Waypoint &wp)
 {
   return strm << "(" << wp.position[0] << ","
     << wp.position[1] << ","
-    << wp.position[2] << ")";
+    << wp.position[2] << ") @ t = "
+    << wp.time << "; constraints = " << wp.constrained[0]
+    << ", " << wp.constrained[1]
+    << ", " << wp.constrained[2]
+    << ", " << wp.constrained[3]
+    << "; status = " << Waypoint::get_status_string(wp.status);
+}
+
+std::string Waypoint::get_status_string(const Status& status)
+{
+  std::string result = "";
+  if (status == Waypoint::Status::COMPLETE)
+  {
+    result = "COMPLETE";
+  }
+  else if (status == Waypoint::Status::ENROUTE)
+  {
+    result = "ENROUTE";
+  }
+  else if (status == Waypoint::Status::INACTIVE)
+  {
+    result = "INACTIVE";
+  }
+  else
+  {
+    result ="UNDEFINED";
+  }
+
+  return result;
+}
+
+
+snav_traj_gen::Waypoint Waypoint::get_traj_gen_waypoint() const
+{
+  snav_traj_gen::Waypoint output;
+  output.position[0] = position[0];
+  output.position[1] = position[1];
+  output.position[2] = position[2];
+  output.velocity[0] = velocity[0];
+  output.velocity[1] = velocity[1];
+  output.velocity[2] = velocity[2];
+  output.acceleration[0] = acceleration[0];
+  output.acceleration[1] = acceleration[1];
+  output.acceleration[2] = acceleration[2];
+  output.jerk[0] = jerk[0];
+  output.jerk[1] = jerk[1];
+  output.jerk[2] = jerk[2];
+  output.time = time;
+  output.constrained[0] = constrained[0];
+  output.constrained[1] = constrained[1];
+  output.constrained[2] = constrained[2];
+  output.constrained[3] = constrained[3];
+  return output;
 }
 
 } // namespace snav_fci

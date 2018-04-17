@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Snapdragon Navigator Flight Control Interface: snav_fci::PlannerConfig Class Reference</title>
+<title>Qualcomm Navigator Flight Control Interface: snav_fci::PlannerConfig Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Snapdragon Navigator Flight Control Interface
-   &#160;<span id="projectnumber">1.0</span>
+   <div id="projectname">Qualcomm Navigator Flight Control Interface
+   &#160;<span id="projectnumber">2.0</span>
    </div>
   </td>
  </tr>
@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -72,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -104,10 +105,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ad7e91563c3b9aa543b1f91324b6afe96"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_planner_config.html#ad7e91563c3b9aa543b1f91324b6afe96">TrajType</a> { <a class="el" href="classsnav__fci_1_1_planner_config.html#ad7e91563c3b9aa543b1f91324b6afe96a50a7316887f56d2d783d2bbbf813c108">TrajType::SHORTEST_PATH</a>
+<tr class="memitem:ad7e91563c3b9aa543b1f91324b6afe96"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_planner_config.html#ad7e91563c3b9aa543b1f91324b6afe96">TrajType</a> { <a class="el" href="classsnav__fci_1_1_planner_config.html#ad7e91563c3b9aa543b1f91324b6afe96a50a7316887f56d2d783d2bbbf813c108">TrajType::SHORTEST_PATH</a> = 0, 
+<a class="el" href="classsnav__fci_1_1_planner_config.html#ad7e91563c3b9aa543b1f91324b6afe96a61e7177c0d5b1c6b5624a8de35a08247">TrajType::MIN_ACC</a>, 
+<a class="el" href="classsnav__fci_1_1_planner_config.html#ad7e91563c3b9aa543b1f91324b6afe96ae8bc4d56b6124330f3bd390bd7cfd6a5">TrajType::MIN_JERK</a>, 
+<a class="el" href="classsnav__fci_1_1_planner_config.html#ad7e91563c3b9aa543b1f91324b6afe96a0282ebfb834dd41d1d1c2973909b51ea">TrajType::MIN_SNAP</a>
  }</td></tr>
 <tr class="memdesc:ad7e91563c3b9aa543b1f91324b6afe96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum used to handle different methods of generating trajectories.  <a href="classsnav__fci_1_1_planner_config.html#ad7e91563c3b9aa543b1f91324b6afe96">More...</a><br/></td></tr>
 <tr class="separator:ad7e91563c3b9aa543b1f91324b6afe96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37cda7655419b43cb3ad1bfc85d8ec92"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_planner_config.html#a37cda7655419b43cb3ad1bfc85d8ec92">TimestampStrategy</a> { <a class="el" href="classsnav__fci_1_1_planner_config.html#a37cda7655419b43cb3ad1bfc85d8ec92a2f610af8f9f7ecff4c1e227fea762672">TimestampStrategy::USE_PROVIDED</a> = 0, 
+<a class="el" href="classsnav__fci_1_1_planner_config.html#a37cda7655419b43cb3ad1bfc85d8ec92a195a40d0787ebba3a53129f7eb104e93">TimestampStrategy::AVERAGE_SPEED</a>
+ }</td></tr>
+<tr class="memdesc:a37cda7655419b43cb3ad1bfc85d8ec92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum used to specify the timestamp strategy when generating trajectories.  <a href="classsnav__fci_1_1_planner_config.html#a37cda7655419b43cb3ad1bfc85d8ec92">More...</a><br/></td></tr>
+<tr class="separator:a37cda7655419b43cb3ad1bfc85d8ec92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -124,10 +133,60 @@ Public Attributes</h2></td></tr>
 <a class="el" href="classsnav__fci_1_1_planner_config.html#ad7e91563c3b9aa543b1f91324b6afe96">TrajType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_planner_config.html#ab285a450990ed9287370395b5a16d198">traj_type</a></td></tr>
 <tr class="memdesc:ab285a450990ed9287370395b5a16d198"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the trajectory-generation method for an instance of Planner. <br/></td></tr>
 <tr class="separator:ab285a450990ed9287370395b5a16d198"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dce3eadcc54c67fe8f204486b1f2870"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsnav__fci_1_1_planner_config.html#a37cda7655419b43cb3ad1bfc85d8ec92">TimestampStrategy</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_planner_config.html#a1dce3eadcc54c67fe8f204486b1f2870">timing</a></td></tr>
+<tr class="separator:a1dce3eadcc54c67fe8f204486b1f2870"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e6d2f549cd1cf2053be78de665df2f7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_planner_config.html#a9e6d2f549cd1cf2053be78de665df2f7">average_speed_xy</a></td></tr>
+<tr class="separator:a9e6d2f549cd1cf2053be78de665df2f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3d68b57909932b5d8b1ba6a5ea92f07"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_planner_config.html#af3d68b57909932b5d8b1ba6a5ea92f07">average_speed_z</a></td></tr>
+<tr class="separator:af3d68b57909932b5d8b1ba6a5ea92f07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a035c62746992aabf21cea3768bafe638"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_planner_config.html#a035c62746992aabf21cea3768bafe638">max_allowed_vel_xy</a></td></tr>
+<tr class="separator:a035c62746992aabf21cea3768bafe638"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92a96dc75629695f9d9f16b1ea9163c7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_planner_config.html#a92a96dc75629695f9d9f16b1ea9163c7">max_allowed_vel_z</a></td></tr>
+<tr class="separator:a92a96dc75629695f9d9f16b1ea9163c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bfb6e0043b51358c2fd252a4c00e240"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_planner_config.html#a3bfb6e0043b51358c2fd252a4c00e240">max_allowed_acc_xy</a></td></tr>
+<tr class="separator:a3bfb6e0043b51358c2fd252a4c00e240"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c306c337fdca572c33108f2a516d7a0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_planner_config.html#a8c306c337fdca572c33108f2a516d7a0">max_allowed_acc_z</a></td></tr>
+<tr class="separator:a8c306c337fdca572c33108f2a516d7a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72115e7a066c7b877db92c355267f804"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_planner_config.html#a72115e7a066c7b877db92c355267f804">max_allowed_jerk_xy</a></td></tr>
+<tr class="separator:a72115e7a066c7b877db92c355267f804"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15eebc379bef660aa1101a0e463d99ed"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_planner_config.html#a15eebc379bef660aa1101a0e463d99ed">max_allowed_jerk_z</a></td></tr>
+<tr class="separator:a15eebc379bef660aa1101a0e463d99ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bdcd312c3b6dca8e095b1d57471b9a7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsnav__fci_1_1_planner_config.html#a9bdcd312c3b6dca8e095b1d57471b9a7">loop</a></td></tr>
+<tr class="separator:a9bdcd312c3b6dca8e095b1d57471b9a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Structure containing options for the Planner. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a class="anchor" id="a37cda7655419b43cb3ad1bfc85d8ec92"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classsnav__fci_1_1_planner_config.html#a37cda7655419b43cb3ad1bfc85d8ec92">snav_fci::PlannerConfig::TimestampStrategy</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Enum used to specify the timestamp strategy when generating trajectories. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a37cda7655419b43cb3ad1bfc85d8ec92a2f610af8f9f7ecff4c1e227fea762672"></a>USE_PROVIDED</em>&#160;</td><td class="fielddoc">
+<p>Use the timestamps provided with the waypoints as is </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a37cda7655419b43cb3ad1bfc85d8ec92a195a40d0787ebba3a53129f7eb104e93"></a>AVERAGE_SPEED</em>&#160;</td><td class="fielddoc">
+<p>Assign timestamps assuming vehicle travels along the shortest path between waypoints at an average speed defined by average_speed_xy and average_speed_z, ignoring any timestamps provided with the waypoints. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a class="anchor" id="ad7e91563c3b9aa543b1f91324b6afe96"></a>
 <div class="memitem">
 <div class="memproto">
@@ -150,6 +209,15 @@ Public Attributes</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ad7e91563c3b9aa543b1f91324b6afe96a50a7316887f56d2d783d2bbbf813c108"></a>SHORTEST_PATH</em>&#160;</td><td class="fielddoc">
 <p>Straight line to waypoint with trapezoidal velocity profile; purely local, computes instantaneous command at each step </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ad7e91563c3b9aa543b1f91324b6afe96a61e7177c0d5b1c6b5624a8de35a08247"></a>MIN_ACC</em>&#160;</td><td class="fielddoc">
+<p>Optimize trajectory by minimizing acceleration </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ad7e91563c3b9aa543b1f91324b6afe96ae8bc4d56b6124330f3bd390bd7cfd6a5"></a>MIN_JERK</em>&#160;</td><td class="fielddoc">
+<p>Optimize trajectory by minimizing jerk </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ad7e91563c3b9aa543b1f91324b6afe96a0282ebfb834dd41d1d1c2973909b51ea"></a>MIN_SNAP</em>&#160;</td><td class="fielddoc">
+<p>Optimize trajectory by minimizing snap </p>
 </td></tr>
 </table>
 
@@ -181,13 +249,144 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a9e6d2f549cd1cf2053be78de665df2f7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float snav_fci::PlannerConfig::average_speed_xy</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Average speed in the XY plane in m/s used when assigning timestamps to waypoints in the following calculation which assumes straight-line paths: t = distance in XY plane / average_speed_xy. Planner uses max of time given by XY calculation and time given by Z calculation. </p>
+
+</div>
+</div>
+<a class="anchor" id="af3d68b57909932b5d8b1ba6a5ea92f07"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float snav_fci::PlannerConfig::average_speed_z</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Average vertical speed in m/s used when assigning timestamps to waypoints in the following calculation which assumes straight-line paths: t = vertical distance / average_speed_z. Planner uses max of time given by XY calculation and time given by Z calculation. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9bdcd312c3b6dca8e095b1d57471b9a7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool snav_fci::PlannerConfig::loop</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Whether or not the trajectory should loop. WARNING: a bug in the traj gen library must be resolved before this option can be used successfully </p>
+
+</div>
+</div>
+<a class="anchor" id="a3bfb6e0043b51358c2fd252a4c00e240"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float snav_fci::PlannerConfig::max_allowed_acc_xy</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Maximum acceleration in the XY plane permitted by the planner in m/s^2. Note that the actual achievable horizontal acceleration is limited by the max tilt angle permitted by Qualcomm Navigator, so increasing this number is not sufficient for the vehicle to attain higher horizontal accelerations. </p>
+
+</div>
+</div>
+<a class="anchor" id="a8c306c337fdca572c33108f2a516d7a0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float snav_fci::PlannerConfig::max_allowed_acc_z</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Maximum vertical acceleration permitted by the planner in m/s^2. Note that this number is limited by the vehicle's thrust-to-weight ratio. </p>
+
+</div>
+</div>
+<a class="anchor" id="a72115e7a066c7b877db92c355267f804"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float snav_fci::PlannerConfig::max_allowed_jerk_xy</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Maximum allowed jerk in the XY plane permitted by the planner in m/s^3. </p>
+
+</div>
+</div>
+<a class="anchor" id="a15eebc379bef660aa1101a0e463d99ed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float snav_fci::PlannerConfig::max_allowed_jerk_z</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Maximum allowed vertical jerk permitted by the planner in m/s^3. </p>
+
+</div>
+</div>
+<a class="anchor" id="a035c62746992aabf21cea3768bafe638"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float snav_fci::PlannerConfig::max_allowed_vel_xy</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Maximum velocity in the XY plane permitted by planner in m/s. Note that Qualcomm Navigator dictates the max velocities allowed in position control modes, so increasing this number is not sufficient for the vehicle to attain higher horizontal velocities. </p>
+
+</div>
+</div>
+<a class="anchor" id="a92a96dc75629695f9d9f16b1ea9163c7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float snav_fci::PlannerConfig::max_allowed_vel_z</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Maximum vertical velocity permitted by the planner in m/s. Note that Qualcomm Navigator dictates the max vertical velocity allowed in height control modes, so increasing this number is not sufficient for the vehicle to attain higher vertical velocities. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1dce3eadcc54c67fe8f204486b1f2870"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsnav__fci_1_1_planner_config.html#a37cda7655419b43cb3ad1bfc85d8ec92">TimestampStrategy</a> snav_fci::PlannerConfig::timing</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Strategy to use for waypoint timestamps in trajectory generation </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>api/config/<a class="el" href="planner__config_8hpp_source.html">planner_config.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 17 2018 14:45:16 for Snapdragon Navigator Flight Control Interface by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 17 2018 13:20:04 for Qualcomm Navigator Flight Control Interface by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
