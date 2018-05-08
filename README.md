@@ -61,7 +61,7 @@ This example requires the following software:
 * [Qualcomm Machine Vision SDK
   1.1.8](https://developer.qualcomm.com/download/machine-vision/machine-vision-sdk-v1.1.8.deb)
 * [Qualcomm ESC Firmware
-  1.2.0](https://developer.qualcomm.com/download/qualcomm-flight/navigator-controller-esc-firmware-v1.2.0)
+  1.2.0](https://developer.qualcomm.com/download/qualcomm-flight/navigator-controller-esc-firmware-v1.2.0.deb)
 * CMake: install on target with `sudo apt-get install cmake`
 * Eigen: install on target with `sudo apt-get install libeigen3-dev`
 
